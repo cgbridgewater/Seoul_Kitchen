@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import SK_LOGO from "../../assets/Images/SK_Logo_No_BG.png"
+import SK_LOGO from "../../assets/Images/SK_Logo_No_BG_White.png"
 import NavLink from "./NavLink"
 import DarkMode from './Darkmode';
 
@@ -9,7 +9,7 @@ const NavHeader = () => {
     useEffect(() => {
         // section 1 - Add remove sticky class on scroll based on window position
         const handleScroll = () => {
-            if (window.scrollY > 80) {
+            if (window.scrollY > 16) {
                 document.querySelector('.nav_header').classList.add('sticky');
             } else {
                 document.querySelector('.nav_header').classList.remove('sticky');

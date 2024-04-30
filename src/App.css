@@ -22,12 +22,14 @@
   --light_yellow: #F6E8B7;
   --dark_yellow: #EFD780;
   --green: #18AC58;
-  --red: #c60505;
+  --red: #CD2D3B;
   --shadow: #979393;
   --img_trim: #0F2F47;
   --button_bg: #979393;
-  --navbar: #a9a9a9;
-  --navbar_shadow: #979393;
+  --navbar: #2B2D2F;
+  /* --navbar: #a9a9a9; */
+  --navbar_shadow: #2b2d2fb0;
+  /* --navbar_shadow: #979393; */
   --navbar_trim: #CBE5EC50;
   --navbar_text: #FFF;
   --blue: #5066B3;
@@ -43,12 +45,12 @@
   /* --light_yellow: #161625; */
   /* --dark_yellow: #182445; */
   --green: #6DA182;
-  --red: #960000;
+  --red: #CE2D3B;
   --shadow: #645489;
   --img_trim: #182445;
   --button_bg: #2b4f59e6;
-  --navbar_shadow: #352a4d;
-  --navbar: #5c5e62;
+  --navbar_shadow: #352a4db0;
+  /* --navbar: #5c5e62; */
 }
 /* END ROOT STYLES */
 
@@ -227,7 +229,7 @@ a {
 
 /* SPLIT TEXT CONTAINER */
 .split_box_text {
-  width: 45%;
+  width: 40%;
   min-width: 300px;
   max-width: 800px;
   margin: 5px 5px 20px 5px;
@@ -240,7 +242,7 @@ a {
 
 /* SPLIT IMAGE CONTAINER */
 .split_box_img {
-  width: 52%;
+  width: 57%;
   min-width: 290px;
   /* max-width: 800px; */
   /* margin: 20px 5px; */
@@ -326,12 +328,12 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--black_fulltime);
+  background: var(--blue);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--blue);
+  background: var(--red);
 }
 /*                      */
 /*   SCROLL BAR STYLE   */
@@ -340,16 +342,12 @@ a {
 /*                     */
 /*    Nav Bar Style    */
 /*                     */
-/* main {
-  padding-top: 24px;
-} */
-
 .nav_header {
   position: fixed;
-  max-height: 100px;
+  max-height: 130px;
   z-index: 999;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 16px;
   overflow: hidden;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -359,6 +357,10 @@ a {
   font-family: "Montserrat", sans-serif;
   box-shadow:  0px 8px 10px var(--navbar_shadow);
 
+  .nav_row {
+    position: relative;
+    top: 20px;
+  }
 }
 
 .hero_section {
@@ -373,8 +375,6 @@ a {
 	background-size: cover;
 	text-align: center;
   border-bottom: 2px solid var(--blue); 
-  box-shadow:  0px 8px 10px var(--navbar_shadow);
-
 
   img {
     position: relative;
@@ -460,11 +460,11 @@ nav ul {
   overflow: hidden;
   text-align: right;
   float: right;
-  width: 600px;
+  width: 650px;
 
   li {
       display: inline-block;
-      margin-left: 35px;
+      margin-left: 24px;
       line-height: 1.5;
   }
 }
@@ -491,7 +491,7 @@ nav ul {
 /*                    */
 nav ul a {
   position: relative;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   color: var(--navbar_text);
 
   &:hover {
@@ -589,7 +589,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 .dark_mode {
   display: flex;
   align-items: center;
-  min-width: 135px;
+  min-width: 90px;
 }
 
 .dark_mode_label {
@@ -597,7 +597,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   height: 30px;
   position: relative;
   top: -2.5px;
-  left: 4px;
+  left: 5px;
   display: block;
   background: #888888;
   border: thin solid #ffffffab;
@@ -702,7 +702,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   border:thin solid var(--img_trim);
   border-radius: 40px;
   transition:all .2s ease-in-out;
-  box-shadow: 2px 2px 8px var(--shadow);
+  /* box-shadow: 2px 2px 8px var(--shadow); */
 }
 
 .button_box button {
@@ -711,9 +711,9 @@ nav ul a:hover:before, nav ul a:hover:after {
   height:60px;
   /* padding: 8px 16px; */
   position:relative;
-  background-color: var(--button_bg);
+  background-color: var(--blue);
   text-transform:uppercase;
-  color: var(--black);
+  color: var(--navbar);
   font-weight:900;
   letter-spacing:1px;
   border: none;
@@ -741,8 +741,8 @@ nav ul a:hover:before, nav ul a:hover:after {
 }
 
 .button_box:hover {
-  border: 1px solid var(--white);
-  box-shadow: 8px 8px 10px var(--shadow);
+  /* border: 1px solid var(--white); */
+  /* box-shadow: 8px 8px 10px var(--shadow); */
 }
 
 .button_box:active {
@@ -1082,9 +1082,15 @@ footer {
     margin: 0;
     padding: 3px;
     background-color: var(--blue);
+    color: var(--navbar);
     width: 100%;
+    text-shadow: none;
+
   }
   p {
+    color: var(--white_text);
+    text-align: center;
+    margin: 24px;
     width: 80%;
   }
 }
