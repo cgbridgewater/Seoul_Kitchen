@@ -51,7 +51,7 @@ const NavHeader = () => {
                 navigation.classList.remove('open_nav');
                 nav_header.classList.remove('open_nav');
             }
-            if (!nav_header.contains()) {
+            if (nav_header.classList.contains('open_nav')) {
                 nav_header.classList.remove('open_nav');
             }
         };

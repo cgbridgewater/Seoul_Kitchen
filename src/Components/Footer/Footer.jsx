@@ -3,6 +3,7 @@ import FooterLink_atag from "./FooterLink_atag";
 import FooterLink from "./FooterLink";
 import SK_LOGO from "../../assets/Images/SK_Logo_No_BG_White.png"
 import Vet_Owned from "../../assets/Images/vet_owned.png"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -71,6 +72,10 @@ const Footer = () => {
                         <a href="#add_a_link" target="_blank">
                             <i className="fa-brands fa-instagram"></i>
                         </a>
+                        {/* Mail */}
+                        <Link to="/location">
+                            <i className="fas fa-envelope-open-text"></i>
+                        </Link>
                     </div>
                 </div>
             </div>

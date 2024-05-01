@@ -813,7 +813,13 @@ nav ul a:hover:before, nav ul a:hover:after {
 
 @media screen and (max-width: 870px) {
   .go_top_button {
-      top: calc(100% - 150px); 
+      top: calc(100% - 160px); 
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .go_top_button {
+      right: 12px;
   }
 }
 
@@ -823,7 +829,7 @@ nav ul a:hover:before, nav ul a:hover:after {
       width: 35px;
       font-size: 20px;
       right: 16px;
-      top: calc(100% - 70px); 
+      top: calc(100% - 80px); 
   }
 }
 /*                             */
@@ -1040,6 +1046,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 
   p{
     font-family: "Source";
+    font-weight: 600;
     color: var(--main_bg);
     max-width: 800px;
     min-width: 290px;
@@ -1137,11 +1144,14 @@ nav ul a:hover:before, nav ul a:hover:after {
   color: var(--main_bg);
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    letter-spacing: .125em;
   }
   h3 {
     width: 275px;
+    letter-spacing: .125em;
     border-bottom: 2px solid;
+    padding-bottom: 2px;
     margin: 42px 0 8px;
   }
   h4{
@@ -1169,7 +1179,9 @@ nav ul a:hover:before, nav ul a:hover:after {
   }
   p {
     font-size: .8rem;
-    padding: 3px 0;
+    letter-spacing: 0.09rem;
+    text-align: center;
+    padding: 3px 8px;
     border-top: thin solid var(--white);
     border-bottom: thin solid var(--white);
   }
