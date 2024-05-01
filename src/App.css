@@ -31,7 +31,7 @@ html, body, * {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  font-family: "Kessel205W00-Book", sans-serif;/* Declare imported main font here */
+  font-family: "Kessel205W00-Book"; /*Declare imported main font here*/
   /* font-family: 'Source Sans Pro', sans-serif;Declare imported main font here */
   word-spacing: .097rem;
   font-display: swap;
@@ -351,6 +351,7 @@ a {
       
       .navigation {
         opacity: 0;
+        pointer-events: none;
       }
   }
 }
@@ -360,6 +361,7 @@ a {
 
   .navigation {
     opacity: 1;
+    pointer-events: all;
   }
 }
 
@@ -944,6 +946,7 @@ footer {
   background-color: var(--white);
   
   p{
+    font-family: "Source";
     color: var(--main_bg);
     max-width: 800px;
     min-width: 290px;
