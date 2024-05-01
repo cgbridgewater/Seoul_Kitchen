@@ -1004,6 +1004,19 @@ footer {
     width: 100%;
   }
 }
+
+
+@media screen and (max-width: 1220px) {
+  .menu {
+
+    img {
+      margin: 0px auto;
+    }
+    img:nth-child(2) {
+      border-top: none;
+    }
+  }
+}
 /*                         */
 /*   END MENU PAGE STYLE   */
 /*                         */
@@ -1066,3 +1079,7 @@ footer {
     }
   }
 }
+
+/*                        */
+/*   END LOCATION STYLE   */
+/*                        */
