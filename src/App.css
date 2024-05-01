@@ -1144,8 +1144,16 @@ nav ul a:hover:before, nav ul a:hover:after {
     border-bottom: 2px solid;
     margin: 42px 0 8px;
   }
+  h4{
+    font-size: 1.35rem;
+    font-weight: 100;
+    letter-spacing: .09rem;
+    word-spacing: .197rem;
+    margin: 8px 0 16px;
+    font-family: "Source";
+  }
   h5 {
-    font-size: 1.125rem;
+    font-size: 1.075rem;
     font-weight: 100;
     letter-spacing: .09rem;
     word-spacing: .197rem;
@@ -1153,6 +1161,7 @@ nav ul a:hover:before, nav ul a:hover:after {
     font-family: "Source";
   }
   .day {
+    font-size: 1.125rem;
     font-weight: 600;
     text-decoration: underline;
     margin-bottom: 0px;
@@ -1165,6 +1174,7 @@ nav ul a:hover:before, nav ul a:hover:after {
     border-bottom: thin solid var(--white);
   }
   a {
+    font-size: 1.35rem;
     text-align: center;
     font-family: "Source";
 

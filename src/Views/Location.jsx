@@ -22,9 +22,9 @@ const Location = () => {
                             North Dakota 58201 <br />
                         </a>
                         <h3>Phone:</h3>
-                        <h5>+1(701) 757-0679</h5>
+                        <h4>+1(701) 757-0679</h4>
                         <h3>Email:</h3>
-                        <h5>seoulkitchen24@gmail.com</h5>
+                        <h4>seoulkitchen24@gmail.com</h4>
                         <h3>Dining Hours:</h3>
                         <h5 className="day">Monday</h5>
                         <h5>Closed</h5>
