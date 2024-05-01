@@ -112,7 +112,7 @@ const NavHeader = () => {
                             {/* <li><NavLink href={"/"} text={ "Home "} /></li> */}
                             <li><NavLink href={"/location"} text={ "Hours And Location "} /></li>
                             <li><NavLink href={"/menu"} text={ "View Menu "} /></li>
-                            <li><NavLink href={"/#disabled"} text={ "Order Online "} /></li>
+                            <li><NavLink href={"#disabled"} text={ "Order Online "} /></li>
                         </ul>
                     </nav>
                     {/* END Nav Links */}

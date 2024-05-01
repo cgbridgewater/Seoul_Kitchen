@@ -19,13 +19,13 @@ const Slideshow = () => {
         <li><span></span></li>
         <li><span></span></li>
         <li><span></span></li>
-      </ul>
-      <ul className="dots">
-        <li className={currentDot === 1 ? "dot_active" : "dot"}></li>
-        <li className={currentDot === 2 ? "dot_active" : "dot"}></li>
-        <li className={currentDot === 3 ? "dot_active" : "dot"}></li>
-        <li className={currentDot === 4 ? "dot_active" : "dot"}></li>
-        <li className={currentDot === 5 ? "dot_active" : "dot"}></li>
+          <ul className="dots">
+            <li className={currentDot === 1 ? "dot_active" : "dot"}></li>
+            <li className={currentDot === 2 ? "dot_active" : "dot"}></li>
+            <li className={currentDot === 3 ? "dot_active" : "dot"}></li>
+            <li className={currentDot === 4 ? "dot_active" : "dot"}></li>
+            <li className={currentDot === 5 ? "dot_active" : "dot"}></li>
+          </ul>
       </ul>
     </>
   );

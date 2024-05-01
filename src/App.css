@@ -324,7 +324,7 @@ a {
   z-index: 998;
   width: 100%;
 	padding-top: 42px;
-	background: #333 url("./assets/Images/Seoul_Tower_Panorama_Night.jpg") bottom center no-repeat;
+	background: var(--main_bg) url("./assets/Images/Seoul_Tower_Panorama_Night.jpg") bottom center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -340,6 +340,9 @@ a {
     padding: 5px;
     z-index: 2;
     border-radius: 15px;
+  }
+  .navigation a {
+    background: rgba(0,0,0, 0.5);
   }
 }
 
@@ -361,10 +364,6 @@ a {
     opacity: 1;
     pointer-events: all;
   }
-}
-
-.hero_section.open_nav .navigation a {
-  background: rgba(0,0,0, 0.5);
 }
 
 .open_nav .mobile_toggle, .open_nav .hero_mobile_toggle {
@@ -848,7 +847,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: var(--alt_white);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -893,7 +892,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   justify-content: center;
   list-style-type: none;
   position: relative;
-  top: -120px;
+  bottom: -90%;
   border: 2px solid var(--blue);
   border-radius: 20px;
   background-color: var(--shadow);
@@ -901,6 +900,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   width: 200px;
   margin: 0 auto;
   transition: all 300ms ease;
+  z-index: 100;
 
   li.dot, li.dot_active {
       width: 28px;
@@ -934,7 +934,6 @@ nav ul a:hover:before, nav ul a:hover:after {
 
 @media screen and (max-width: 1200px) {
   .dots {
-    top: -80px;
     width: 150px;
 
     li.dot, li.dot_active {
@@ -946,7 +945,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 
 @media screen and (max-width: 950px) {
   .dots {
-    top: -70px;
+    bottom: -89%;
     width: 100px;
 
     li.dot, li.dot_active {
@@ -956,15 +955,15 @@ nav ul a:hover:before, nav ul a:hover:after {
     }
   }
 }
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 750px) {
   .dots {
-    top: -55px;
+    bottom: -86%;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
   .dots {
-    top: -50px;
+    bottom: -87%;
     width: 80px;
 
     li.dot, li.dot_active {
@@ -977,7 +976,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 
 @media screen and (max-width: 430px) {
   .dots {
-    top: -35px;
+    bottom: -85%;
     width: 70px;
 
     li.dot, li.dot_active {
@@ -1032,7 +1031,8 @@ nav ul a:hover:before, nav ul a:hover:after {
 /*                        */
 .vet_owned  {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 0;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1043,7 +1043,6 @@ nav ul a:hover:before, nav ul a:hover:after {
     color: var(--main_bg);
     max-width: 800px;
     min-width: 290px;
-    margin: 50px;
   }
 }
 
