@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Button from "../Components/Button";
-import Oreo from "../assets/Images/Oreo_Croffle.jpg"
+import Bibim_Bap from "../assets/Images/Bibim_Bap.jpg"
 
 const AboutUs = () => {
 
@@ -20,7 +20,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div className="split_box_img">
-                        <img src={ Oreo } alt="Oreo Croffle" />
+                        <img src={ Bibim_Bap } alt="Bibim Bap" />
                     </div>
                 </div>
             </div>
