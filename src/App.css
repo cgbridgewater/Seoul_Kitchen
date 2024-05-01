@@ -644,11 +644,11 @@ footer {
 .footer_socials {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   gap: 0 10px;
   transition: all 200ms ease;
-  margin-top: 5px;
+  margin-top: 3px;
 
   i {
     font-size: 1.25rem;
@@ -986,7 +986,6 @@ footer {
 /*                         */
 /*     MENU PAGE STYLE     */
 /*                         */
-
 .menu {
   background-color: var(--white);
   display: flex;
@@ -1025,7 +1024,6 @@ footer {
 /*                      */
 /*    LOCATION STYLE    */
 /*                      */
-
 .mapping iframe {
   min-height: 320px;
   min-width: 320px;
@@ -1046,26 +1044,26 @@ footer {
   color: var(--main_bg);
 
   h1 {
-    font-family: "Kessel205W00-Book";
-    word-spacing: .097rem;
     font-size: 3.5rem;
   }
   h3 {
-    width: 310px;
+    width: 275px;
     border-bottom: 2px solid;
     margin: 42px 0 8px;
   }
-  h5, h6 {
+  h5 {
     font-size: 1.125rem;
     font-weight: 100;
     letter-spacing: .09rem;
     word-spacing: .197rem;
     margin: 8px 0 16px;
+    font-family: "Source";
   }
   .day {
     font-weight: 600;
     text-decoration: underline;
     margin-bottom: 0px;
+    font-family: "Kessel205W00-Book";
   }
   p {
     font-size: .8rem;
@@ -1075,6 +1073,7 @@ footer {
   }
   a {
     text-align: center;
+    font-family: "Source";
 
     &:hover {
       color: var(--alt_white);

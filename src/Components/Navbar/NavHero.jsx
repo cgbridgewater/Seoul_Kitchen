@@ -111,7 +111,7 @@ const NavHero = () => {
                     {/* Nav Links */}
                     <nav className="navigation">
                         <ul>
-                            <li><NavLink href={"/"} text={ "Home "} /></li>
+                            {/* <li><NavLink href={"/"} text={ "Home "} /></li> */}
                             <li><NavLink href={"/location"} text={ "Hours And Location "} /></li>
                             <li><NavLink href={"/menu"} text={ "View Menu "} /></li>
                             <li><NavLink href={"/#disabled"} text={ "Order Online "} /></li>
