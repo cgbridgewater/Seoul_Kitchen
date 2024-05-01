@@ -13,13 +13,12 @@ const Index = () => {
     return (
         <main>
             <Slideshow />
-            <div className="wrapper">
-                <br />
                 <div className="vet_owned">
                     <p className="centered">
-                        Seoul Kitchen is a veteran owned and operated restaurant located in Grand Forks, ND that captures exciting and authentic Korean flavors with a modern and welcoming setting.</p>
+                        Seoul Kitchen is a veteran owned and operated restaurant located in Grand Forks, ND that captures exciting and authentic Korean flavors with a modern and inviting setting.</p>
                 </div>
-            </div>
+            {/* <div className="wrapper">
+            </div> */}
             <section>
                 <div className="split_box">
                     <div className="split_box_text">
