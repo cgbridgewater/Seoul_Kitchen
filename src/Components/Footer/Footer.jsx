@@ -12,8 +12,6 @@ const Footer = () => {
             const footer = document.querySelector('.footer');
             const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
             const scrollY = window.scrollY;
-            console.log("scrollable", scrollableHeight)
-            console.log("scrolly", scrollY)
 
             if ((scrollableHeight-1.5) <= scrollY) {
                 footer.classList.add('footer_border');
