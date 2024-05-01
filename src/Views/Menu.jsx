@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import menu1 from "../assets/Images/Seoul_Kitchen_Menu_Front4-(Without_Prices).jpg"
 import menu2 from "../assets/Images/Seoul_Kitchen_Menu_Back5-(Without_Prices).jpg"
 
 const MenuPage = () => {
 
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <main>

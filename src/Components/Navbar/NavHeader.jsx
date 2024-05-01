@@ -1,20 +1,40 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import SK_LOGO from "../../assets/Images/SK_Logo_No_BG_White.png"
 import NavLink from "./NavLink"
 
 const NavHeader = () => {
 
+    const navHeaderRef = useRef(null);
+
     useEffect(() => {
         // section 1 - Add remove sticky class on scroll based on window position
         const handleScroll = () => {
+            const nav_header = document.querySelector('.nav_header');
             if (window.scrollY > 16) {
-                document.querySelector('.nav_header').classList.add('sticky');
+                nav_header.classList.add('sticky');
             } else {
-                document.querySelector('.nav_header').classList.remove('sticky');
+                nav_header.classList.remove('sticky');
+            }
+            if (nav_header) {
+                if (window.scrollY > 5) {
+                    nav_header.classList.remove('open_nav');
+                } else {
+                    nav_header.classList.remove('open_nav');
+                }
             }
         };
-        // section 2 - Opens Mobile Hamburger
+
+        // section 2 - Closes Mobile Hamburger when clicked outside of navbar
+        const handleClickOutside = (event) => {
+            if (navHeaderRef.current && !navHeaderRef.current.contains(event.target)) {
+                const nav_header = document.querySelector('.nav_header');
+                nav_header.classList.remove('open_nav');
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+
+        // section 3 - Opens Mobile Hamburger
         const handleMobileToggle = () => {
             const nav_header = document.querySelector('.nav_header');
             if (nav_header.classList.contains('open_nav')) {
@@ -23,7 +43,8 @@ const NavHeader = () => {
                 nav_header.classList.add('open_nav');
             }
         };
-        // section 3 - Closes the nav on page change
+
+        // section 4 - Closes the nav on page change
         const handleCloseNav = () => {
             const nav_header = document.querySelector('.nav_header');
             const navigation = document.querySelector('.navigation');
@@ -31,16 +52,19 @@ const NavHeader = () => {
                 navigation.classList.remove('open_nav');
                 nav_header.classList.remove('open_nav');
             }
+            if (!nav_header.contains(e.target)) {
+                nav_header.classList.remove('open_nav');
+            }
         };
 
-        // section 4 - closes the mobile menu on click
+        // section 5 - closes the mobile menu on click
         window.addEventListener('scroll', handleScroll);
         document.querySelector('.mobile_toggle').addEventListener('click', handleMobileToggle);
         document.querySelectorAll('.nav_header li a').forEach(anchor => {
             anchor.addEventListener('click', handleCloseNav);
         });
 
-        // section 5 - closes the mobile menu on dark mode theme change
+        // section 6 - closes the mobile menu on dark mode theme change
         const drawerLinkDark = document.querySelectorAll('.darkmode_input');
         drawerLinkDark.forEach(input => { 
             input.addEventListener('click', () => { 
@@ -50,8 +74,9 @@ const NavHeader = () => {
             });
         });
 
-        // section 6 - closes all event listeners
+        // section 7 - closes all event listeners
         return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
             window.removeEventListener('scroll', handleScroll);
             document.querySelector('.mobile_toggle').removeEventListener('click', handleMobileToggle);
             document.querySelectorAll('.nav_header li a').forEach(anchor => {
@@ -72,7 +97,7 @@ const NavHeader = () => {
     return(
         <>
             {/* NAV BAR (Appears on Scroll) */}
-            <header className="nav_header">
+            <header ref={navHeaderRef} className="nav_header">
                 <div className="nav_row">
                     {/* NavBar Title */}
                         <Link className="logo" to="/"><img src={ SK_LOGO } alt="Seoul Kitchen Logo" /></Link>
@@ -88,7 +113,7 @@ const NavHeader = () => {
                             <li><NavLink href={"/"} text={ "Home "} /></li>
                             <li><NavLink href={"/location"} text={ "Hours And Location "} /></li>
                             <li><NavLink href={"/menu"} text={ "View Menu "} /></li>
-                            <li><NavLink href={"/#"} text={ "Order Online "} /></li>
+                            <li><NavLink href={"/#disabled"} text={ "Order Online "} /></li>
                         </ul>
                     </nav>
                     {/* END Nav Links */}

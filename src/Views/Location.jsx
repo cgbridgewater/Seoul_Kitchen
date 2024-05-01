@@ -1,11 +1,13 @@
-import Button from "../Components/Button";
-import Galbi from "../assets/Images/Galbi2.png"
+import { useEffect } from "react";
 
-// get Google API key
-const Google_API = import.meta.env.VITE_MB_GOOGLE_API;
 
 const Location = () => {
+    // get Google API key
+    const Google_API = import.meta.env.VITE_MB_GOOGLE_API;
 
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <main>

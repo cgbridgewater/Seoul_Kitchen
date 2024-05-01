@@ -49,7 +49,7 @@ const Footer = () => {
             {/* RIGHT SIDE OF FOOTER */}
                 {/* Footer Owner Badges */}
                 <div className="footer_images">
-                    <img className="footer_image_one" src={ SK_LOGO } alt="Seoul Kitchen Logo" />
+                    <a href="/"><img className="footer_image_one" src={ SK_LOGO } alt="Seoul Kitchen Logo" /></a>
                     <img className="footer_image_two" src={ Vet_Owned } alt="Seoul Kitchen Logo" />
                 </div>
         </footer>
