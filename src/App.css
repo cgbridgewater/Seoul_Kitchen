@@ -632,6 +632,7 @@ footer {
     font-size: 0.9rem;
   }
   p {
+    font-family: 'Source Sans Pro', sans-serif;
     color: var(--white);
   }
 }
