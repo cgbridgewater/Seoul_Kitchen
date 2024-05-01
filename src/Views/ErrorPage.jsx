@@ -29,8 +29,8 @@ const ErrorPage = () => {
         <main>
             <div className="error_404_page">
                 <img src={ Food_404 } alt="Error 404" />
-                <h2>Whoops, nothing delicious to find here.</h2>
-                <h4>Seems like the page you were trying to find is no longer available</h4>
+                <h2>Whoops...</h2>
+                <h4>Looks like you were trying to order off the menu.</h4>
                 <h5>Hold tight, we'll get you back in... { timer/1000 }</h5>
                 <Button to="/" text="Go Home" />
             </div>

@@ -1,11 +1,41 @@
+import { useEffect } from "react";
 import FooterLink_atag from "./FooterLink_atag";
 import FooterLink from "./FooterLink";
 import SK_LOGO from "../../assets/Images/SK_Logo_No_BG_White.png"
 import Vet_Owned from "../../assets/Images/vet_owned.png"
 
 const Footer = () => {
+
+    useEffect(() => {
+        // section 1 - Add remove footer_border class on scroll based on window position
+        const handleScrollToBottom = () => {
+            const footer = document.querySelector('.footer');
+            const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollY = window.scrollY;
+            console.log("scrollable", scrollableHeight)
+            console.log("scrolly", scrollY)
+
+            if ((scrollableHeight-1.5) <= scrollY) {
+                footer.classList.add('footer_border');
+            } else {
+                footer.classList.remove('footer_border');
+            }
+        };
+        
+
+        // section 2 - listen for scroll
+        window.addEventListener('scroll', handleScrollToBottom);
+
+        // section 3 - closes event listener
+        return () => {
+            window.removeEventListener('scroll', handleScrollToBottom);
+        };
+
+    }, []);
+
+
     return (
-        <footer>
+        <footer className="footer">
             {/* LEFT SIDE OF FOOTER */}
             {/* Links In Footer */}
             <div className="footer_links">

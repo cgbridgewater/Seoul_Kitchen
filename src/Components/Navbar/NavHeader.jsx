@@ -32,7 +32,6 @@ const NavHeader = () => {
                 nav_header.classList.remove('open_nav');
             }
         };
-        document.addEventListener('mousedown', handleClickOutside);
 
         // section 3 - Opens Mobile Hamburger
         const handleMobileToggle = () => {
@@ -56,8 +55,9 @@ const NavHeader = () => {
                 nav_header.classList.remove('open_nav');
             }
         };
-
+        
         // section 5 - closes the mobile menu on click
+        document.addEventListener('mousedown', handleClickOutside);
         window.addEventListener('scroll', handleScroll);
         document.querySelector('.mobile_toggle').addEventListener('click', handleMobileToggle);
         document.querySelectorAll('.nav_header li a').forEach(anchor => {
@@ -92,7 +92,6 @@ const NavHeader = () => {
             });
         };
     }, []);
-
 
     return(
         <>

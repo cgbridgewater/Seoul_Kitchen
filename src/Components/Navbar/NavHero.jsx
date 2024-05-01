@@ -28,33 +28,33 @@ const NavHero = () => {
                     hero_section.classList.remove('open_nav');
                 }
             };
-            document.addEventListener('mousedown', handleClickOutside);
 
-        // section 3 - Opens Mobile Hamburger
-        const handleMobileToggle = () => {
-            const hero_section = document.querySelector('.hero_section');
-            if (hero_section) {
-                if (hero_section.classList.contains('open_nav')) {
-                    hero_section.classList.remove('open_nav');
-                } else {
-                    hero_section.classList.add('open_nav');
+            // section 3 - Opens Mobile Hamburger
+            const handleMobileToggle = () => {
+                const hero_section = document.querySelector('.hero_section');
+                if (hero_section) {
+                    if (hero_section.classList.contains('open_nav')) {
+                        hero_section.classList.remove('open_nav');
+                    } else {
+                        hero_section.classList.add('open_nav');
+                    }
                 }
-            }
-        };
+            };
 
-        // section 4 - Closes the nav on page change
-        const handleCloseNav = () => {
-            const hero_section = document.querySelector('.hero_section');
-            const navigation = document.querySelector('.navigation');
-            if (hero_section && navigation) {
-                if (hero_section.classList.contains('open_nav')) {
-                    navigation.classList.remove('open_nav');
-                    hero_section.classList.remove('open_nav');
+            // section 4 - Closes the nav on page change
+            const handleCloseNav = () => {
+                const hero_section = document.querySelector('.hero_section');
+                const navigation = document.querySelector('.navigation');
+                if (hero_section && navigation) {
+                    if (hero_section.classList.contains('open_nav')) {
+                        navigation.classList.remove('open_nav');
+                        hero_section.classList.remove('open_nav');
+                    }
                 }
-            }
-        };
+            };
 
-        // section 5 - closes the mobile menu on click
+            // section 5 - closes the mobile menu on click
+        document.addEventListener('mousedown', handleClickOutside);
         window.addEventListener('scroll', handleScroll);
         const hero_mobile_toggle = document.querySelector('.hero_mobile_toggle');
         if (hero_mobile_toggle) {

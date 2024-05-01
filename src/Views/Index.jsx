@@ -19,7 +19,7 @@ const Index = () => {
                 </div>
             {/* <div className="wrapper">
             </div> */}
-            <section>
+            <div className="wrapper">
                 <div className="split_box">
                     <div className="split_box_text">
                         <div className="menu_link">
@@ -45,7 +45,7 @@ const Index = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
     );
 };
