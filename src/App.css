@@ -188,6 +188,25 @@ a {
   background-color: var(--main_bg);
 }
 
+.index {
+  opacity: 0;
+  transition: all 700ms ease-in;
+  overflow: hidden;
+}
+
+.left {
+  transform: translateX(-250px);
+}
+
+.right {
+  transform: translateX(250px);
+}
+
+.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 /* THIS FLIPS THE WRAP (CAN BE USED TO PREVENT BACK TO BACK IMAGES OR TEXT ON PAGE COLLAPSE/PHONE VIEW) */
 .flip {
   flex-wrap: wrap-reverse;
