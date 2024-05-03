@@ -8,24 +8,27 @@ const NavHeader = () => {
     const navHeaderRef = useRef(null);
 
     useEffect(() => {
+
         // section 1 - Add/Remove sticky class on scroll based actions position
         const handleScroll = () => {
+            // activates the header to replace the NavHero header
             const nav_header = document.querySelector('.nav_header');
             if (window.scrollY > 16) {
                 nav_header.classList.add('sticky');
             } else {
                 nav_header.classList.remove('sticky');
             }
+
+            // if page is scrolled when nav is open it will close the nav
             if (nav_header) {
                 if (window.scrollY > 5) {
-                    nav_header.classList.remove('open_nav');
-                } else {
                     nav_header.classList.remove('open_nav');
                 }
             }
         };
 
-        // section 2 - Closes Mobile Hamburger when clicked outside of navbar
+
+        // section 2 - Closes Mobile Hamburger when clicked outside of mobile navbar 
         const handleClickOutside = (event) => {
             if (navHeaderRef.current && !navHeaderRef.current.contains(event.target)) {
                 const nav_header = document.querySelector('.nav_header');
@@ -33,15 +36,15 @@ const NavHeader = () => {
             }
         };
 
-        // section 3 - Opens Mobile Hamburger
+
+        // section 3 - Opens Mobile Hamburger on click of the hamburger
         const handleMobileToggle = () => {
             const nav_header = document.querySelector('.nav_header');
-            if (nav_header.classList.contains('open_nav')) {
-                nav_header.classList.remove('open_nav');
-            } else {
-                nav_header.classList.add('open_nav');
+            if (nav_header) {
+                nav_header.classList.toggle('open_nav');
             }
         };
+
 
         // section 4 - Closes the nav on page change
         const handleCloseNav = () => {
@@ -55,24 +58,40 @@ const NavHeader = () => {
                 nav_header.classList.remove('open_nav');
             }
         };
-        
+
+
         // section 5 - closes the mobile menu on click
+        // triggers close from clicking outside menu
         document.addEventListener('mousedown', handleClickOutside);
+        // triggers close from  page scroll
         window.addEventListener('scroll', handleScroll);
+        // triggers close from clicking hamburger
         document.querySelector('.mobile_toggle').addEventListener('click', handleMobileToggle);
-        document.querySelectorAll('.nav_header li a').forEach(anchor => {
+        // triggers close from  menu link click
+        const nav_links = document.querySelectorAll('.nav_header li a');
+        nav_links.forEach(anchor => {
+            anchor.addEventListener('click', handleCloseNav);
+        });
+        // triggers close from on site logo click
+        const logo_link = document.querySelectorAll('.logo');
+        logo_link.forEach(anchor => {
             anchor.addEventListener('click', handleCloseNav);
         });
 
-        // section 6 - closes all event listeners
+
+        // section 6 - closes all event listeners to prevent memory leak
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
             window.removeEventListener('scroll', handleScroll);
             document.querySelector('.mobile_toggle').removeEventListener('click', handleMobileToggle);
-            document.querySelectorAll('.nav_header li a').forEach(anchor => {
+            nav_links.forEach(anchor => {
+                anchor.removeEventListener('click', handleCloseNav);
+            });
+            logo_link.forEach(anchor => {
                 anchor.removeEventListener('click', handleCloseNav);
             });
         };
+
     }, []);
 
     return(
