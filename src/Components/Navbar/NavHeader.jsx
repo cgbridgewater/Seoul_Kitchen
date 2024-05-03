@@ -8,7 +8,7 @@ const NavHeader = () => {
     const navHeaderRef = useRef(null);
 
     useEffect(() => {
-        // section 1 - Add remove sticky class on scroll based on window position
+        // section 1 - Add/Remove sticky class on scroll based actions position
         const handleScroll = () => {
             const nav_header = document.querySelector('.nav_header');
             if (window.scrollY > 16) {
@@ -64,31 +64,13 @@ const NavHeader = () => {
             anchor.addEventListener('click', handleCloseNav);
         });
 
-        // section 6 - closes the mobile menu on dark mode theme change
-        const drawerLinkDark = document.querySelectorAll('.darkmode_input');
-        drawerLinkDark.forEach(input => { 
-            input.addEventListener('click', () => { 
-                setTimeout(() => {
-                    handleCloseNav()
-                }, 750);
-            });
-        });
-
-        // section 7 - closes all event listeners
+        // section 6 - closes all event listeners
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
             window.removeEventListener('scroll', handleScroll);
             document.querySelector('.mobile_toggle').removeEventListener('click', handleMobileToggle);
             document.querySelectorAll('.nav_header li a').forEach(anchor => {
                 anchor.removeEventListener('click', handleCloseNav);
-            });
-            const drawerLinkDark = document.querySelectorAll('.darkmode_input');
-            drawerLinkDark.forEach(input => { 
-                input.removeEventListener('click', () => { 
-                    setTimeout(() => {
-                        handleCloseNav()
-                    }, 750);
-                });
             });
         };
     }, []);
