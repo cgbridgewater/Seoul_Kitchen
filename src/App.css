@@ -378,6 +378,8 @@ a {
 
 .open_nav {
   max-height: 400px !important;
+  position: sticky;
+  margin-bottom: -133px;
 
   .navigation {
     opacity: 1;
