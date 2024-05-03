@@ -378,14 +378,18 @@ a {
 
 .open_nav {
   max-height: 400px !important;
-  position: sticky;
-  margin-bottom: -133px;
-
+  
   .navigation {
     opacity: 1;
     pointer-events: all;
   }
 }
+
+.hero_section.open_nav {
+  position: sticky;
+  margin-bottom: -133px;
+}
+
 
 .open_nav .mobile_toggle, .open_nav .hero_mobile_toggle {
   transform: rotate(-90deg);
