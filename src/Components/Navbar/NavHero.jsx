@@ -95,7 +95,7 @@ const NavHero = () => {
             <div ref={navHeaderRef} className="hero_section">
                 <div className="nav_row">
                     {/* NavBar Title */}
-                        <Link className="hero_logo" to="/"><img src={ SK_LOGO } alt="Seoul Kitchen Logo" /></Link>
+                        <Link className="hero_logo" to="/" aria={ "Home Page" }><img src={ SK_LOGO } alt="Seoul Kitchen Logo" /></Link>
                     {/* END NavBar Title */}
                     {/* Hamburger */}
                     <div className="hero_mobile_toggle">
@@ -106,9 +106,9 @@ const NavHero = () => {
                     <nav className="navigation">
                         <ul>
                             {/* <li><NavLink href={"/"} text={ "Home "} /></li> */}
-                            <li><NavLink href={"/location"} text={ "Hours And Location "} /></li>
-                            <li><NavLink href={"/menu"} text={ "View Menu "} /></li>
-                            <li><NavLink href={"#disabled"} text={ "Order Online "} /></li>
+                            <li><NavLink href={"/location"} text={ "Hours And Location "} aria={ "View Hours And Location Info" } /></li>
+                            <li><NavLink href={"/menu"} text={ "View Menu "} aria={ "View Our Menu" } /></li>
+                            <li><NavLink href={"#disabled"} text={ "Order Online "} aria={ "Click Here To Order Online" } /></li>
                         </ul>
                     </nav>
                     {/* END Nav Links */}

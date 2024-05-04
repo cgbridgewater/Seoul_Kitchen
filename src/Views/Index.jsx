@@ -44,23 +44,23 @@ const Index = () => {
             </div> */}
             <div className="wrapper">
                 <div className="split_box ">
-                    <div className="split_box_text index left">
+                    <div className="split_box_text hidden left">
                         <div className="menu_link">
                             <h2>Menus</h2>
                             <p>Explore our delicious selection, available every day of the week.</p>
                             <Button to= { "/menu"} text={ "View Menus" } />
                         </div>
                     </div>
-                    <div className="split_box_img index right">
+                    <div className="split_box_img hidden right">
                         <img src={ Galbi } alt="Galbi Plate" />
                     </div>
                 </div>
                 {/* install split spinner here?? */}
                 <div className="split_box  flip">
-                    <div className="split_box_img index left">
+                    <div className="split_box_img hidden left">
                         <img src={ Kimbap } alt="Galbi Plate" />
                     </div>
-                    <div className="split_box_text index right">
+                    <div className="split_box_text hidden right">
                         <div className="menu_link">
                             <h2>Order Online</h2>
                             <p>Explore our delicious selection, available every day of the week.</p>
