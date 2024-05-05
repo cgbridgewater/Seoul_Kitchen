@@ -100,8 +100,7 @@ const NavHeader = () => {
             <header ref={navHeaderRef} className="nav_header">
                 <div className="nav_row">
                     {/* NavBar Title */}
-                        <Link className="logo" to="/" aria={ "Home Page" }><img src={ SK_LOGO } alt="Seoul Kitchen Logo" /></Link>
-                    {/* END NavBar Title */}
+                    <Link className="logo" to="/"><img src={ SK_LOGO } alt="Seoul Kitchen Logo" /></Link>                    {/* END NavBar Title */}
                     {/* Hamburger */}
                     <div className="mobile_toggle">
                         <label htmlFor="hamburger" id="hamburger"><span className="visually-hidden">Empty Link</span></label>
@@ -111,9 +110,9 @@ const NavHeader = () => {
                     <nav className="navigation">
                         <ul>
                             {/* <li><NavLink href={"/"} text={ "Home "} /></li> */}
-                            <li><NavLink href={"/location"} text={ "Hours And Location "} aria={ "View Hours And Location" } /></li>
-                            <li><NavLink href={"/menu"} text={ "View Menu "} aria={ "View Our Menus" } /></li>
-                            <li><NavLink href={"#disabled"} text={ "Order Online "} aria={ "Click To Order Online " }/></li>
+                            <li><NavLink href={"/location"} text={ "Hours And Location"}/></li>
+                            <li><NavLink href={"/menu"} text={ "View Menu"}/></li>
+                            <li><NavLink href={"#disabled"} text={ "Order Online"}/></li>
                         </ul>
                     </nav>
                     {/* END Nav Links */}
