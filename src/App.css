@@ -348,7 +348,7 @@ a {
 	-moz-background-size: cover;
 	background-size: cover;
 	text-align: center;
-  border-bottom: 2px solid var(--blue);
+  border-bottom: thin solid var(--blue);
 
   img {
     position: relative;
@@ -361,7 +361,12 @@ a {
     border-radius: 15px;
   }
   .navigation a {
-    background: rgba(127, 16, 123, 0.25);
+    font-size: 1rem;
+    background-color: rgba(182, 0, 176, 0.25);
+    padding: 1px 2px;
+    border-radius: 5px;
+    letter-spacing: .15rem;
+    font-weight: bolder;
   }
 }
 
@@ -372,6 +377,10 @@ a {
       .navigation {
         opacity: 0;
         pointer-events: none;
+
+        a {
+          background-color: rgba(182, 0, 176, .65);
+        }
       }
   }
 }
