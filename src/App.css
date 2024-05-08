@@ -16,7 +16,13 @@
   --alt_white: #CBE5EC;
   --red: #CD2D3B;
   --main_bg: #2B2D2F;
-  --blue: #5066B3;
+  /* --blue: rgba(182, 0, 176, 1); */
+  /*To match Sky Purple*/
+  /* --blue: #831189;  */
+  /* FROM SK LOGO */
+  /* --blue: #5066B3;  */
+  /* skyline blue */
+  --blue: #0659CA;
   --navbar_shadow: #2b2d2fb0;
   --shadow: #979393;
   --background: #EFEFEF;
@@ -202,7 +208,12 @@ a {
   transform: translateX(250px);
 }
 
+.bottom {
+  transform: translateY(250px);
+}
+
 .show {
+  transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
 }
@@ -307,7 +318,7 @@ a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--red);
+  background: #5066B3;
 }
 /*                          */
 /*   END SCROLL BAR STYLE   */
@@ -335,6 +346,14 @@ a {
     position: relative;
     top: 20px;
   }
+  .navigation a {
+    font-size: 1rem;
+    background-color: #83118956;
+    padding: 1px 2px;
+    border-radius: 5px;
+    letter-spacing: .15rem;
+    font-weight: bolder;
+  }
 }
 
 .hero_section {
@@ -343,7 +362,7 @@ a {
   z-index: 998;
   width: 100%;
 	padding-top: 42px;
-	background: var(--main_bg) url("./assets/Images/Seoul_Tower_Panorama_Night.jpg") bottom center no-repeat;
+	background: var(--main_bg) url("./assets/Images/Seoul_Tower_Panorama_Night.jpg") 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -355,14 +374,14 @@ a {
     top: -12px;
     float: left;
     height: 100px;
-    aspect-ratio: 1.42/1;
+    width: 190px;
     padding: 5px;
     z-index: 2;
     border-radius: 15px;
   }
   .navigation a {
     font-size: 1rem;
-    background-color: rgba(182, 0, 176, 0.25);
+    background-color: #83118956;
     padding: 1px 2px;
     border-radius: 5px;
     letter-spacing: .15rem;
@@ -370,7 +389,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 800px) {
   .nav_header, .hero_section {
       padding-top: 25px;
 
@@ -379,7 +398,7 @@ a {
         pointer-events: none;
 
         a {
-          background-color: rgba(182, 0, 176, .65);
+          background-color: #831189b7;
         }
       }
   }
@@ -408,7 +427,11 @@ a {
 }
 
 .sticky {
-  background-color: var(--main_bg);
+  /* background-color: var(--main_bg); */
+  background: var(--main_bg) url("./assets/Images/Seoul_Tower_Panorama_Night.jpg") 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
   opacity: 1;
   top: 0px;
   border-bottom: 2px solid var(--blue); 
@@ -427,12 +450,12 @@ a {
 
     img {
       height: 100px;
-      aspect-ratio: 1.42/1;
+      width: 190px;
       padding: 5px;
     }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 800px) {
   .logo, .hero_logo {
       float: none;
   }
@@ -443,7 +466,7 @@ nav {
   width: 60%;
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 800px) {
   nav {
       width: 100%;
   }
@@ -463,7 +486,7 @@ nav ul {
   }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 800px) {
   nav ul {
       padding-top: 10px;
       margin-bottom: 22px;
@@ -473,7 +496,7 @@ nav ul {
   }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 800px) {
   nav ul li {
       width: 100%;
       padding: 7px 0;
@@ -525,7 +548,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   transition: all 200ms ease-in;
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 800px) {
   .mobile_toggle, .hero_mobile_toggle {
       display: block;
   }
@@ -893,7 +916,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   background-repeat: no-repeat;
   opacity: 0;
   z-index: 0;
-  animation: imageAnimation 15s linear infinite 0s; 
+  animation: imageAnimation 18s linear infinite 0s; 
 }
 
 /* images and times for slide show */
@@ -916,6 +939,10 @@ nav ul a:hover:before, nav ul a:hover:after {
   background-image: url("./assets/Images/Kimbap.jpg");
   animation-delay: 12s; 
 }
+.slideshow li:nth-child(6) span { 
+  background-image: url("./assets/Images/Bibim_Bap.jpg");
+  animation-delay: 15s; 
+}
 
 /* Animation for slide show */
 @keyframes imageAnimation { 
@@ -932,19 +959,19 @@ nav ul a:hover:before, nav ul a:hover:after {
   justify-content: center;
   list-style-type: none;
   position: relative;
-  bottom: -90%;
+  bottom: calc(-100% + 50px);
   border: 2px solid var(--blue);
   border-radius: 20px;
   background-color: var(--shadow);
   padding: 2px;
-  width: 200px;
+  width: 165px;
   margin: 0 auto;
   transition: all 300ms ease;
   z-index: 100;
 
   li.dot, li.dot_active {
-      width: 28px;
-      height: 28px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
       border: thin solid var(--white);
       margin: 5px;
@@ -1106,7 +1133,7 @@ nav ul a:hover:before, nav ul a:hover:after {
     width: 100%;
   }
   p {
-    font-family: "Source";
+    /* font-family: "Source"; */
     color: var(--white);
     text-align: center;
     padding: 24px 24px 12px 24px;

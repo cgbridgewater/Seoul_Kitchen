@@ -20,8 +20,8 @@ const Index = () => {
                 if (entry.isIntersecting) observer.unobserve(entry.target)
             })
         },{
-            // this requires 20% of the div to be intersecting before made visable
-            threshold: 0.2 
+            // this requires the set % of the div to be intersecting before made visable
+            threshold: 0.3 
         });
         // trigger text box
         split_text.forEach(split => {
@@ -35,27 +35,34 @@ const Index = () => {
 
     return (
         <main>
-            <Slideshow />
-            <div className="vet_owned">
-                <p className="centered">
-                    Seoul Kitchen is a veteran owned and operated restaurant located in Grand Forks, ND that captures exciting and authentic Korean flavors with a modern and inviting setting.</p>
-            </div>
-            {/* <div className="wrapper">
-            </div> */}
             <div className="wrapper">
+                {/* Split box for slideshow and about us */}
+                <div className="split_box flip">
+                    <div className="split_box_img hidden bottom">
+                        <Slideshow />
+                    </div>
+                    <div className="split_box_text hidden bottom">
+                        <div className="menu_link">
+                            <h2>About Seoul Kitchen</h2>
+                            <p>We are a family owned and operated restaurant that serves authentic and delicious Korean cuisine. Each mouth-watering dish is made to order, bringing the spicy taste of Seoul to the heart of Grand Forks.</p>
+                            <Button to= { "/location" } text={ "Visit Us" } />
+                        </div>
+                    </div>
+                </div>
+                {/* Split box for menu link */}
                 <div className="split_box ">
                     <div className="split_box_text hidden left">
                         <div className="menu_link">
                             <h2>Menus</h2>
                             <p>Explore our delicious selection, available every day of the week.</p>
-                            <Button to= { "/menu"} text={ "View Menus" } />
+                            <Button to= { "/menu" } text={ "View Menus" } />
                         </div>
                     </div>
                     <div className="split_box_img hidden right">
                         <img src={ Galbi } alt="Galbi Plate" />
                     </div>
                 </div>
-                {/* install split spinner here?? */}
+                {/* Split box for Order Online */}
                 <div className="split_box  flip">
                     <div className="split_box_img hidden left">
                         <img src={ Kimbap } alt="Galbi Plate" />
@@ -64,7 +71,7 @@ const Index = () => {
                         <div className="menu_link">
                             <h2>Order Online</h2>
                             <p>Explore our delicious selection, available every day of the week.</p>
-                            <Button to= { "#"} text={ "Order Online" } />
+                            <Button to= { "#" } text={ "Order Online" } />
                         </div>
                     </div>
                 </div>

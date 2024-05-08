@@ -54,7 +54,6 @@ const Footer = () => {
                 <div className="footer_link_column">
                     <FooterLink href="/location" text="Hours & Location"/>
                     <FooterLink href="/menu" text="Menu"/>
-                    <FooterLink href="/aboutus" text="About Us"/>
                     {/* <FooterLink href="/#" text="Order Online" /> */}
                     {/* Footer Socials */}
                     <div className="footer_socials">
