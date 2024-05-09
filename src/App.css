@@ -348,8 +348,9 @@ a {
   }
   .navigation a {
     font-size: 1rem;
-    background-color: #83118956;
-    padding: 1px 2px;
+    /* background-color: #83118956; */
+    background-color: #0b397a94;
+    /* padding: 1px 2px; */
     border-radius: 5px;
     letter-spacing: .15rem;
     font-weight: bolder;
@@ -381,8 +382,9 @@ a {
   }
   .navigation a {
     font-size: 1rem;
-    background-color: #83118956;
-    padding: 1px 2px;
+    /* background-color: #83118956; */
+    background-color: #0b397a94;
+    /* padding: 1px 2px; */
     border-radius: 5px;
     letter-spacing: .15rem;
     font-weight: bolder;
@@ -398,7 +400,9 @@ a {
         pointer-events: none;
 
         a {
-          background-color: #831189b7;
+          background-color: #0b397ab6;
+          /* background-color: #831189b7; */
+          padding: 1px 2px;
         }
       }
   }
