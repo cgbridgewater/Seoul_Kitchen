@@ -685,12 +685,13 @@ nav ul a:hover:before, nav ul a:hover:after {
 }
 
 .footer_link_column {
+  height: 95px;
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: space-between;
 
   p, a {
-    margin: 2px 0;
+    margin: 0;
     font-size: 0.9rem;
   }
   p {
@@ -708,12 +709,12 @@ nav ul a:hover:before, nav ul a:hover:after {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 0 10px;
+  gap: 0 14px;
   transition: all 200ms ease;
-  margin-top: 3px;
+  /* margin-top: 3px; */
 
   i {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
   }
   svg {
     position: relative;
@@ -766,7 +767,8 @@ nav ul a:hover:before, nav ul a:hover:after {
     margin-top: 0px;
   }
   .bee_dev {
-    margin-bottom: 4px;
+    height: 80px;
+    margin-bottom: 12px;
 
       p, a {
           margin: 0;
