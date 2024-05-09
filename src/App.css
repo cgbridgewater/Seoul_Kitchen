@@ -958,20 +958,22 @@ nav ul a:hover:before, nav ul a:hover:after {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  position: relative;
-  bottom: calc(-100% + 50px);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 2px solid var(--blue);
   border-radius: 20px;
   background-color: var(--shadow);
   padding: 2px;
-  width: 165px;
+  width: 150px;
   margin: 0 auto;
   transition: all 300ms ease;
   z-index: 100;
 
   li.dot, li.dot_active {
-      width: 22px;
-      height: 22px;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
       border: thin solid var(--white);
       margin: 5px;
@@ -987,33 +989,9 @@ nav ul a:hover:before, nav ul a:hover:after {
   background-color: var(--blue);
 }
 
-/* Dot Animation */
-@keyframes dotAnimation {
-  0% {
-    opacity: 1;
-    background-color: var(--blue);
-  }
-  100% {
-    opacity: 1;
-    background-color: var(--white);
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .dots {
-    width: 150px;
-
-    li.dot, li.dot_active {
-      width: 18px;
-      height: 18px;
-    }
-  }
-}
-
 @media screen and (max-width: 950px) {
   .dots {
-    bottom: -89%;
-    width: 100px;
+    width: 125px;
 
     li.dot, li.dot_active {
       width: 12px;
@@ -1022,16 +1000,11 @@ nav ul a:hover:before, nav ul a:hover:after {
     }
   }
 }
-@media screen and (max-width: 750px) {
-  .dots {
-    bottom: -86%;
-  }
-}
 
 @media screen and (max-width: 530px) {
   .dots {
-    bottom: -87%;
-    width: 80px;
+    width: 100px;
+    bottom: 12px;
 
     li.dot, li.dot_active {
       width: 8px;
@@ -1043,8 +1016,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 
 @media screen and (max-width: 430px) {
   .dots {
-    bottom: -85%;
-    width: 70px;
+    width: 75px;
 
     li.dot, li.dot_active {
       margin: 2px 2px;
