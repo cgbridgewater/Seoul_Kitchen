@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 
@@ -26,7 +27,11 @@
   /* FROM SK LOGO */
   /* --blue: #5066B3;  */
   /* skyline blue */
-  --blue: #0659CA;
+  /* --blue: #0659CA; */
+  /* DARK DARK Blue behind nav links */
+  --blue: #152F5A;
+  --blue: #E9332A;
+  --blue: #D90C29;
   --navbar_shadow: #2b2d2fb0;
   --shadow: #979393;
   --background: #EFEFEF;
@@ -934,7 +939,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   background-image: url("./assets/Images/Dakkalbi.png"); 
 }
 .slideshow li:nth-child(2) span { 
-  background-image: url("./assets/Images/Strawb_Croffle.jpg");
+  background-image: url("./assets/Images/Strawb_Croffle.jpeg");
   animation-delay: 3s; 
 }
 .slideshow li:nth-child(3) span { 
@@ -942,7 +947,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   animation-delay: 6s; 
 }
 .slideshow li:nth-child(4) span { 
-  background-image: url("./assets/Images/Oreo_Croffle.jpg");   
+  background-image: url("./assets/Images/Oreo_Croffle.jpeg");   
   animation-delay: 9s; 
 }
 .slideshow li:nth-child(5) span { 
@@ -1115,8 +1120,8 @@ nav ul a:hover:before, nav ul a:hover:after {
     width: 100%;
   }
   p {
-    font-family: cursive;
-    font-weight: 100;
+    font-family: "Lato";
+    font-weight: 300;
     color: var(--white);
     text-align: center;
     padding: 24px 24px 12px 24px;
