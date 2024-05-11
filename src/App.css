@@ -298,8 +298,15 @@ a {
 
 @media (max-width: 1065px) {
   .split_box_text, .split_box_img {
-    margin: 20px auto;
-    width: 100%;
+    margin: 10px auto;
+    width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .split_box_text, .split_box_img {
+    margin: 1px auto;
+    width: 97%;
   }
 }
 /*                           */
@@ -312,7 +319,7 @@ a {
 /*                      */
 /* width */
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 10px;
 }
 
 /* Track */
@@ -1104,7 +1111,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 .menu_link {
   width: 100%;
   min-width: 300px;
-  max-width: 400px;
+  max-width: 500px;
   padding-bottom: 24px;
   display: flex;
   flex-direction: column;
@@ -1114,7 +1121,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 
   h2 {
     margin: 0;
-    padding: 8px 24px;
+    padding: 2px 24px;
     background-color: var(--blue);
     color: var(--main_bg);
     width: 100%;
@@ -1149,7 +1156,7 @@ nav ul a:hover:before, nav ul a:hover:after {
     border: 3px solid var(--blue);
     margin: 24px auto;
     max-width: 1200px;;
-    min-width: 350px;
+    /* min-width: 300px; */
     width: 100%;
   }
 }
