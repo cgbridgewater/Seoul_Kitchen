@@ -2,6 +2,10 @@
 /*     FONT IMPORT       */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url("//db.onlinewebfonts.com/c/b7d4f106ab4959cc88cb7d0878c732c6?family=Kessel205W00-Book");
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 
 /*                       */
@@ -247,7 +251,7 @@ a {
   img {
     width: 100%;
     min-width: 300px;
-    aspect-ratio: 2/1.43;
+    aspect-ratio: 1.4/1;
     border: 3px solid var(--blue);
     /* box-shadow:  8px 8px 10px var(--shadow);
     border-radius: 20px; */
@@ -906,8 +910,8 @@ nav ul a:hover:before, nav ul a:hover:after {
 .slideshow, .slideshow::after { 
   position: relative;
   width: 100%;
-  min-width: 290px;
-  aspect-ratio: 2/1;
+  min-width: 300px;
+  aspect-ratio: 1.4/1;
   list-style-type: none;
   border: 3px solid var(--blue);
 }
@@ -1074,7 +1078,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 /*                        */
 /*    INDEX PAGE STYLE    */
 /*                        */
-.vet_owned  {
+/* .vet_owned  {
   width: 100%;
   margin: 0 auto 0;
   padding: 50px;
@@ -1090,7 +1094,7 @@ nav ul a:hover:before, nav ul a:hover:after {
     max-width: 800px;
     min-width: 290px;
   }
-}
+} */
 
 .menu_link {
   width: 100%;
@@ -1111,7 +1115,8 @@ nav ul a:hover:before, nav ul a:hover:after {
     width: 100%;
   }
   p {
-    /* font-family: "Source"; */
+    font-family: cursive;
+    font-weight: 100;
     color: var(--white);
     text-align: center;
     padding: 24px 24px 12px 24px;

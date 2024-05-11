@@ -3,6 +3,8 @@ import Button from "../Components/Button";
 import Slideshow from "../Components/Slideshow";
 import Galbi from "../assets/Images/Galbi2.png"
 import Kimbap from "../assets/Images/Kimbap.jpg"
+import RamSet from "../assets/Images/Ram_Set.jpg"
+import Tofu from "../assets/Images/Tofu.jpg"
 
 const Index = () => {
 
@@ -44,7 +46,7 @@ const Index = () => {
                     <div className="split_box_text hidden bottom">
                         <div className="menu_link">
                             <h2>About Seoul Kitchen</h2>
-                            <p>We are a family owned and operated restaurant that serves authentic and delicious Korean cuisine. Each mouth-watering dish is made to order, bringing the spicy taste of Seoul to the heart of Grand Forks.</p>
+                            <p>We are a family owned and operated restaurant that serves authentic and delicious Korean cuisine. <br /><br /> Each mouth-watering dish is made to order, bringing the spicy taste of Seoul to the heart of Grand Forks.</p>
                             <Button to= { "/location" } text={ "Visit Us" } />
                         </div>
                     </div>
@@ -59,13 +61,13 @@ const Index = () => {
                         </div>
                     </div>
                     <div className="split_box_img hidden right">
-                        <img src={ Galbi } alt="Galbi Plate" />
+                        <img src={ Tofu } alt="Galbi Plate" />
                     </div>
                 </div>
                 {/* Split box for Order Online */}
                 <div className="split_box  flip">
                     <div className="split_box_img hidden left">
-                        <img src={ Kimbap } alt="Galbi Plate" />
+                        <img src={ RamSet } alt="Galbi Plate" />
                     </div>
                     <div className="split_box_text hidden right">
                         <div className="menu_link">
