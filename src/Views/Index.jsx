@@ -29,9 +29,12 @@ const Index = ({ handleOpenModal }) => {
         setElements([...splitTextRefs.current, ...splitImgRefs.current]);
     }, []);
 
+    // Determine threshold based on window width
+    const threshold = window.innerWidth < 600 ? 0.1 : 0.25;
+
     // Call the custom hook for intersection observer
     useIntersectionObserver(elements, {
-        threshold: 0.3,
+        threshold: threshold,
     });
 
     return (
