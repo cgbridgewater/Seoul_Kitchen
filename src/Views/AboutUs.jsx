@@ -37,9 +37,15 @@ const AboutUs = () => {
             <div className="wrapper">
                 <div className="split_box">
                     <div className="split_box_text hidden left">
-                        <div className="menu_link">
-                            <h2>About Seoul Kitchen</h2>
-                            <p>We are a family owned and operated restaurant that serves authentic and delicious Korean cuisine. Each mouth-watering dish is made to order, bringing the spicy taste of Seoul to the heart of Grand Forks.</p>
+                        <div className="about_us">
+                            <h2>About Seoul Food</h2>
+                            <p>
+                                We are a family-owned and operated restaurant dedicated to serving authentic and delicious Korean cuisine. With over 10 years of experience, we have perfected our recipes to bring you the best flavors of Korea. We take pride in sharing our culture through food and love seeing familiar faces return to savor their favorite dishes. Whether you’re a longtime fan or trying Korean cuisine for the first time, our friendly staff is here to guide you through the menu and ensure a memorable dining experience.
+                            </p>
+
+                            <p>
+                                Each dish is made to order. From our signature spicy kimchi to tender bulgogi, every dish is crafted with love and care, reflecting the rich traditions of Korean cooking. We invite you to explore our diverse menu, featuring a variety of options, including vegetarian and gluten-free dishes, ensuring there’s something for everyone to enjoy.
+                            </p>
                             <Button to= { "/location"} text={ "Visit Us" } />
                         </div>
                     </div>
