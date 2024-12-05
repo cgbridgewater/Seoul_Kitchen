@@ -1,12 +1,10 @@
 import { useEffect } from "react";
 import Button from "../Components/Button";
 import Slideshow from "../Components/Slideshow";
-import Galbi from "../assets/Images/Galbi2.png"
-import Kimbap from "../assets/Images/Kimbap.jpg"
 import RamSet from "../assets/Images/Ram_Set.jpg"
 import Tofu from "../assets/Images/Tofu.jpg"
 
-const Index = () => {
+const Index = ({ handleOpenModal }) => {
 
     useEffect(() => {
         window.scrollTo(0,0)
@@ -45,9 +43,13 @@ const Index = () => {
                     </div>
                     <div className="split_box_text hidden bottom">
                         <div className="menu_link">
-                            <h2>About Seoul Kitchen</h2>
-                            <p>We are a family owned and operated restaurant that serves authentic and delicious Korean cuisine. <br /><br /> Each mouth-watering dish is made to order, bringing the spicy taste of Seoul to the heart of Grand Forks.</p>
-                            <Button to= { "/location" } text={ "Visit Us" } />
+                            <h2>About Seoul Food</h2>
+                            <p>
+                                At Seoul Food, we bring the vibrant and spicy flavors of Seoul to the heart of SeaTac, Washington.
+                                <br /><br />
+                                With over 10 years of culinary experience and generations of family traditions, we take pride in serving authentic Korean cuisine crafted from the freshest ingredients.
+                            </p>
+                            <Button to= { "/aboutus" } text={ "More About Us" } />
                         </div>
                     </div>
                 </div>
@@ -55,9 +57,9 @@ const Index = () => {
                 <div className="split_box ">
                     <div className="split_box_text hidden left">
                         <div className="menu_link">
-                            <h2>Menus</h2>
-                            <p>Explore our delicious selection, available every day of the week.</p>
-                            <Button to= { "/menu" } text={ "View Menus" } />
+                            <h2>Menu</h2>
+                            <p>Discover our menu, crafted with authentic and flavorful ingredients that bring the true taste of Korea, available every day of the week.</p>
+                            <Button to= { "/menu" } text={ "View Menu" } />
                         </div>
                     </div>
                     <div className="split_box_img hidden right">
@@ -72,8 +74,8 @@ const Index = () => {
                     <div className="split_box_text hidden right">
                         <div className="menu_link">
                             <h2>Order Online</h2>
-                            <p>Explore our delicious selection, available every day of the week.</p>
-                            <Button to= { "#" } text={ "Order Online" } />
+                            <p>Order online and savor authentic Korean flavors, made ready to pick up, or delivered to you every day of the week!</p>
+                            <Button to= { "#" } text={ "Online Ordering" } handleOpenModal={handleOpenModal} />
                         </div>
                     </div>
                 </div>

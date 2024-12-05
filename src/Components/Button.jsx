@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-const Button = ({ to, text }) => {
+const Button = ({ to, text, handleOpenModal }) => {
     
     return (
-        <Link className='button_box' to={ to }>
+        <Link className='button_box' to={ to } onClick={handleOpenModal}>
             <button >
                 { text }
             </button>

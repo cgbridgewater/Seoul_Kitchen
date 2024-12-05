@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 
-const FooterLink = ({ href, text}) => {
+const FooterLink = ({ href, text, handleOpenModal}) => {
 
     return (
-        <Link to={ href }><span className="footer_link">{ text }</span></Link>
+        <Link to={ href } onClick={handleOpenModal}><span className="footer_link">{ text }</span></Link>
     );
 };
 

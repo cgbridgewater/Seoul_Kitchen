@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import SK_LOGO from "../../assets/Images/SK_Logo_No_BG_White.png"
+import SK_LOGO from "../../assets/Images/SoulFoodLogoWhite.png"
 import NavLink from "./NavLink"
 
-const NavHeader = () => {
+const NavHeader = ({handleOpenModal}) => {
 
     const navHeaderRef = useRef(null);
 
@@ -13,7 +13,7 @@ const NavHeader = () => {
         const handleScroll = () => {
             // activates the header to replace the NavHero header
             const nav_header = document.querySelector('.nav_header');
-            if (window.scrollY > 16) {
+            if (window.scrollY > 1) {
                 nav_header.classList.add('sticky');
             } else {
                 nav_header.classList.remove('sticky');
@@ -111,8 +111,9 @@ const NavHeader = () => {
                         <ul>
                             {/* <li><NavLink href={"/"} text={ "Home "} /></li> */}
                             <li><NavLink href={"/location"} text={ "Hours And Location"}/></li>
+                            <li><NavLink href={"/aboutus"} text={ "About Us"}/></li>
                             <li><NavLink href={"/menu"} text={ "View Menu"}/></li>
-                            <li><NavLink href={"#disabled"} text={ "Order Online"}/></li>
+                            <li><NavLink href={"#"} text={ "Order Online"} handleOpenModal={handleOpenModal} /></li>
                         </ul>
                     </nav>
                     {/* END Nav Links */}
