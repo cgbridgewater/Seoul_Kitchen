@@ -1,7 +1,7 @@
 /*                       */
 /*     FONT IMPORT       */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-@import url("https://db.onlinewebfonts.com/c/b7d4f106ab4959cc88cb7d0878c732c6?family=Kessel205W00-Book");
+@import url("https://db.onlinewebfonts.com/c/b7d4f106ab4959cc88cb7d0878c732c6?family=Kessel205W00-Book&weight=400"); 
 @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
@@ -21,17 +21,7 @@
   --alt_white: #CBE5EC;
   --red: #CD2D3B;
   --main_bg: #2B2D2F;
-  /* --blue: rgba(182, 0, 176, 1); */
-  /*To match Sky Purple*/
-  /* --blue: #831189;  */
-  /* FROM SK LOGO */
-  /* --blue: #5066B3;  */
-  /* skyline blue */
-  /* --blue: #0659CA; */
-  /* DARK DARK Blue behind nav links */
-  --blue: #152F5A;
-  --blue: #E9332A;
-  --blue: #D90C29;
+  --blue: #46548B;
   --navbar_shadow: #2b2d2fb0;
   --shadow: #979393;
   --background: #EFEFEF;
@@ -50,10 +40,16 @@ html, body, * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
+
 
 html {
   font-size: var(--font_size_default);
+}
+
+body {
+  background-color: var(--main_bg);
 }
 /* END CSS RESET */
 
@@ -68,9 +64,12 @@ html {
   transition: all 800ms ease;
 }
 
+
 /* MAIN  -- TO BE USED ON ALL VIEW PAGES */
 main {
   flex: 1;
+  padding-top: 130px;
+  background-color: var(--main_bg);
 }
 /* END MAIN  */
 
@@ -81,7 +80,9 @@ h1, h2, h3, h4, h5, h6, a, p {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.85rem;
+  letter-spacing: .125em;
+  margin: 0;
   /* text-shadow: 0.5px 0.5px 0.5px var(--shadow); */
 }
 
@@ -115,7 +116,7 @@ a {
 /* INCREASE FONT SIZES FOR LARGER SCREEN VIEWS */
 @media (min-width: 1200px) {
   h1 {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
   }
   h2 {
     font-size: 2rem;
@@ -237,7 +238,7 @@ a {
   width: 40%;
   min-width: 300px;
   max-width: 800px;
-  margin: 5px 5px 20px 5px;
+  margin: 5px;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -247,15 +248,15 @@ a {
 /* SPLIT IMAGE CONTAINER */
 .split_box_img {
   width: 57%;
-  min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
-
+  
   img {
     width: 100%;
     min-width: 300px;
+    max-height: 550px;
     aspect-ratio: 1.4/1;
     border: 3px solid var(--blue);
     /* box-shadow:  8px 8px 10px var(--shadow);
@@ -297,18 +298,17 @@ a {
 }
 
 @media (max-width: 1065px) {
-  .split_box_text, .split_box_img {
-    margin: 10px auto;
+  .split_box_text, .split_box_img, .split_box {
+    margin: 5px auto;
+  }
+  .split_box_img {
     width: 95%;
+  }
+  .split_box_text {
+    width: 100%;
   }
 }
 
-@media (max-width: 500px) {
-  .split_box_text, .split_box_img {
-    margin: 1px auto;
-    width: 97%;
-  }
-}
 /*                           */
 /*     END PAGE LAYOUTS      */
 /*                           */
@@ -345,18 +345,27 @@ a {
 /*                     */
 .nav_header {
   position: fixed;
-  max-height: 130px;
+  max-height: 120px;
   z-index: 999;
   width: 100%;
   padding-top: 16px;
   overflow: hidden;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  opacity: 0;
-  top: -100px;
+  /* opacity: 0;
+  top: -100px; */
   padding-bottom: 6px;
   font-family: "Montserrat", sans-serif;
   box-shadow:  0px 8px 10px var(--navbar_shadow);
+
+    background: var(--main_bg) url("./assets/Images/Seoul_Tower_Panorama_Night.jpg") 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    opacity: 1;
+    top: 0px;
+    border-bottom: 2px solid var(--blue); 
+
 
   .nav_row {
     position: relative;
@@ -374,8 +383,8 @@ a {
 }
 
 .hero_section {
-  position: relative;
-	max-height: 150px;
+  position: sticky;
+	max-height: 110px;
   z-index: 998;
   width: 100%;
 	padding-top: 42px;
@@ -391,7 +400,7 @@ a {
     top: -12px;
     float: left;
     height: 100px;
-    width: 190px;
+    width: 110px;
     padding: 5px;
     z-index: 2;
     border-radius: 15px;
@@ -470,8 +479,9 @@ a {
 
     img {
       height: 100px;
-      width: 190px;
+      width: 110px;
       padding: 5px;
+      border-radius: 50%;
     }
 }
 
@@ -635,10 +645,10 @@ nav ul a:hover:before, nav ul a:hover:after {
 }
 
 .button_box button {
-  width:200px;
   margin: 0 auto;
+  padding: 0px 16px;
+  min-width:220px;
   height:60px;
-  /* padding: 8px 16px; */
   position:relative;
   background-color: var(--blue);
   text-transform:uppercase;
@@ -683,6 +693,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 .footer {
   position: relative;
   padding: 16px 85px 36px 8px;
+  margin-top: 16px;
   min-height: 95px;
   background: var(--main_bg);
   display: flex;
@@ -761,7 +772,9 @@ nav ul a:hover:before, nav ul a:hover:after {
 }
 
 .footer_image_one {
+  margin-top: 12px;
   height: 65px;
+  border-radius: 50%;
 }
 
 .footer_image_two {
@@ -775,7 +788,7 @@ nav ul a:hover:before, nav ul a:hover:after {
       align-items: flex-start;
 
       a {
-        margin: 5px 0
+        margin-top: 5px;
       }
   }
   .footer_images {
@@ -875,7 +888,10 @@ nav ul a:hover:before, nav ul a:hover:after {
   font-size: 30px;
   background-color: var(--main_bg);
   color: var(--blue);
-  border: 3px solid var(--blue);
+  border-left: 3px solid var(--blue);
+  border-top: 3px solid var(--blue);
+  border-right: 3px solid var(--red);
+  border-bottom: 3px solid var(--red);
   border-radius: 25%;
   z-index: 1000;
   display: flex;
@@ -883,7 +899,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   align-items: center;
   cursor: pointer;
   transition: all 300ms ease;
-
+  
   &:hover {
       color: var(--shadow);
       border: 3px solid var(--shadow);
@@ -938,7 +954,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   background-repeat: no-repeat;
   opacity: 0;
   z-index: 0;
-  animation: imageAnimation 18s linear infinite 0s; 
+  animation: imageAnimation 18s linear infinite 0s;
 }
 
 /* images and times for slide show */
@@ -999,7 +1015,7 @@ nav ul a:hover:before, nav ul a:hover:after {
       border-radius: 50%;
       border: thin solid var(--white);
       margin: 5px;
-      cursor: pointer;
+      cursor: default;
       transition: background-color 1s;
     }
     li.dot {
@@ -1090,28 +1106,11 @@ nav ul a:hover:before, nav ul a:hover:after {
 /*                        */
 /*    INDEX PAGE STYLE    */
 /*                        */
-/* .vet_owned  {
-  width: 100%;
-  margin: 0 auto 0;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white);
 
-  p{
-    font-family: "Source";
-    font-weight: 600;
-    color: var(--main_bg);
-    max-width: 800px;
-    min-width: 290px;
-  }
-} */
-
-.menu_link {
+.menu_link, .about_us {
   width: 100%;
   min-width: 300px;
-  max-width: 500px;
+  max-width: 95%;
   padding-bottom: 24px;
   display: flex;
   flex-direction: column;
@@ -1127,13 +1126,17 @@ nav ul a:hover:before, nav ul a:hover:after {
     width: 100%;
   }
   p {
-    font-family: "Lato";
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     color: var(--white);
     text-align: center;
     padding: 24px 24px 12px 24px;
     width: 100%;
   }
+}
+
+.about_us p {
+  font-size: 1.1rem;
 }
 /*                          */
 /*   END INDEX PAGE STYLE   */
@@ -1144,34 +1147,183 @@ nav ul a:hover:before, nav ul a:hover:after {
 /*     MENU PAGE STYLE     */
 /*                         */
 .menu {
-  background-color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin: 0 auto;
+  margin: 16px auto;
+  
+  h1 {
+    margin-top: 48px;
+    text-align: center;
+  }
+  
+  h5 {
+    text-align: center;
+    
+    svg {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
 
-  img {
+.menu_drinks {
+  margin: 48px;
+  h1 {
+    margin-bottom: 48px;
+  }
+  h3 {
+    text-align: center;
+    letter-spacing: .12rem;
+    word-spacing: .197rem;
+    font-size: 1.25rem;
+        
+    svg {
+      color: var(--blue);
+      position: relative;
+      top: 2px;
+      margin: 0 16px 0 12px;
+    }
+  }
+}
+
+.menu_card_container {
+  max-width: 900px;
+  padding: 0 16px;
+  margin: 36px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px 64px;
+  transition: all 300ms ease;
+
+  .menu_card {
+    width: 400px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     border: 3px solid var(--blue);
-    margin: 24px auto;
-    max-width: 1200px;;
-    /* min-width: 300px; */
-    width: 100%;
-  }
-}
+    border-radius: 4px;
 
-
-@media screen and (max-width: 1220px) {
-  .menu {
     img {
-      margin: 0px auto;
+      height: 120px;
+      width: 120px;
+      border: 3px solid var(--blue);
+      border-radius: 50%;
+      margin: 8px;
     }
-    img:nth-child(2) {
-      border-top: none;
+    
+    h5 {
+      width: 98%;
+      margin: 0 auto;
+      font-size: 0.85rem;
+      font-weight: 900;
+      padding-bottom: 3px;
+      text-align: center;
+      border-bottom: thin solid var(--blue);
+    }
+    p{
+      margin: 8px auto;
+      padding: 4px;
+      width: 90%;
+      font-size: 0.85rem;
+      font-family: "Montserrat", sans-serif;
+      min-height: 100px;
     }
   }
 }
+
+.shake {
+  animation: wobble 0.5s 1;
+}
+
+@keyframes wobble {
+  20% {
+  transform: rotate(1deg);
+  }
+  40% {
+  transform: rotate(-2deg);
+  }
+  60% {
+  transform: rotate(0.5deg);
+  }
+  80% {
+  transform: rotate(-0.5deg);
+  }
+  100% {
+  transform: rotate(0deg);
+  }
+}
+
+@media only screen and (max-width:780px) {
+  .menu {
+    
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    h5 {
+      font-size: 0.9rem;
+    }
+  }  
+  .menu_drinks h3 {
+      text-align: center;
+      letter-spacing: .05rem;
+      word-spacing: .05rem;
+      font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:650px) {
+  .menu_drinks h1 {
+        margin-bottom: 24px;
+  }
+  .drinks_break {
+      display:none !important;
+  }
+}
+
+@media only screen and (min-width:650px) {
+  .menu_break {
+      display:none !important;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .menu_card_container {
+    gap: 16px 0px;
+    padding: 0;
+
+    .menu_card {
+      width: 350px;
+      padding: 6px 0;
+
+      img {
+        height: 90px;
+        width: 90px;
+      }
+      
+      h5 {
+        font-size: 1rem;
+      }
+      
+      p{
+        margin: 6px auto;
+        padding: 4px;
+        width: 90%;
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+/* @media screen and (max-width: 700px) {
+
+} */
+
 /*                         */
 /*   END MENU PAGE STYLE   */
 /*                         */
@@ -1186,72 +1338,160 @@ nav ul a:hover:before, nav ul a:hover:after {
   width: 85dvw;
   height: 600px;
   border: 3px solid var(--blue);
-  filter: brightness(85%);
+  filter: brightness(90%);
 }
 
 .contact_info {
   width: 100%;
   min-width: 350px;
   max-width: 750px;
-  padding-bottom: 24px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--main_bg);
-
-  h1 {
-    font-size: 3rem;
-    letter-spacing: .125em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+  
+  * {
+    text-align: center;
   }
+  
   h3 {
     width: 275px;
+    font-size: 1.8rem;
     letter-spacing: .125em;
+    word-spacing: .197rem;
     border-bottom: 2px solid;
     padding-bottom: 2px;
-    margin: 42px 0 8px;
+    margin: 56px 0 16px;
   }
+  
   h4{
-    font-size: 1.35rem;
-    font-weight: 100;
     letter-spacing: .09rem;
     word-spacing: .197rem;
-    margin: 8px 0 16px;
-    font-family: "Source";
+    font-size: 1.125rem;
+    padding-bottom: 3px;
+    border-bottom: thin solid var(--white);
+    width: 80%;
+    margin: 18px auto 0px;
+    font-family: "Kessel205W00-Book";
   }
+  
   h5 {
     font-size: 1.075rem;
     font-weight: 100;
     letter-spacing: .09rem;
     word-spacing: .197rem;
-    margin: 8px 0 16px;
+    margin: 8px 0 0;
     font-family: "Source";
   }
-  .day {
-    font-size: 1.125rem;
-    font-weight: 600;
-    text-decoration: underline;
-    margin-bottom: 0px;
-    font-family: "Kessel205W00-Book";
-  }
-  p {
-    font-size: .8rem;
-    letter-spacing: 0.09rem;
-    text-align: center;
-    padding: 3px 8px;
-    border-top: thin solid var(--white);
-    border-bottom: thin solid var(--white);
-  }
+
   a {
     font-size: 1.35rem;
+    letter-spacing: .05rem;
+    word-spacing: .1rem;
     text-align: center;
     font-family: "Source";
 
+    
     &:hover {
       color: var(--alt_white);
       text-decoration: underline;
     }
   }
 }
+
+.happy_hour {
+  margin: 36px 0 12px;
+  
+  p {
+    margin: 0;
+    padding: 3px 8px;
+    font-size: .85rem;
+    letter-spacing: 0.09rem;
+    text-align: center;
+    border-top: thin solid var(--white);
+    border-bottom: thin solid var(--white);
+  }
+}
+
+@media screen and (max-width: 949px) {
+  .contact_info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    h3 {
+      margin-top: 36px;
+    }
+  }
+  .wrapper h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 605px) {
+  .happy_hour {
+    margin: 36px 0 12px;
+    min-width: 320px;
+    width: 85dvw;
+    
+  }
+}
 /*                        */
 /*   END LOCATION STYLE   */
 /*                        */
+
+
+/*                   */
+/* COMING SOON MODAL */
+/*                   */
+
+/* COMING SOON MODAL */
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2B2D2F70;
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000000;
+  scroll-behavior: none;
+}
+
+/* Coming Soon Modal Content */
+.coming_soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 350px;
+  max-width: 500px;
+  min-height: 300px;
+  padding: 24px;
+  text-align: center;
+  background-color: #2B2D2F;
+  border: 5px solid var(--blue);
+  border-radius: 8px;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  p {
+    margin: 8px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+
+
+
+/*                       */
+/* END COMING SOON MODAL */
+/*                       */
