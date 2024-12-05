@@ -1170,7 +1170,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 }
 
 .menu_drinks {
-  margin: 48px;
+  margin: 0 0 48px;
   h1 {
     margin-bottom: 48px;
   }
