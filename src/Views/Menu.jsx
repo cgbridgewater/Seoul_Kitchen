@@ -1,20 +1,26 @@
-import { useEffect, useState } from "react";
-// import menu1 from "../assets/Images/MenuFront.jpg"
-// import menu2 from "../assets/Images/Seoul_Kitchen_Menu_Back5-(Without_Prices).jpg"
+import { useEffect } from "react";
+
+// Subcomponent Imports
+import MenuCard from "../Components/MenuCard";
 import Button from "../Components/Button";
 
-// Import Menu JSON File
+// JSON File Import
 import MenuData from "../assets/Json/Menu.json"
-import MenuCard from "../Components/MenuCard";
+
+// Icon Imports
 import { GiBowlOfRice, GiChiliPepper } from "react-icons/gi";
 import { LuVegan } from "react-icons/lu";
 import { FaCircle } from "react-icons/fa";
 import { BiSolidDrink } from "react-icons/bi";
 
+// Custom Hook Imports
+import useShake from "../Hooks/useShake";
+import useScrollToTop from "../Hooks/useScrollToTop";
+
 const MenuPage = ({ handleOpenModal }) => {
 
-    // State for Card shake
-    const [isShaking, setIsShaking] = useState(false);
+    // Deconstruct custom hook for card shake
+    const { isShaking } = useShake();
 
     // Filter Menu Data by Menu Category
     const AppsData = MenuData.filter(data => data.isActive && data.catagory === "app");
@@ -23,42 +29,15 @@ const MenuPage = ({ handleOpenModal }) => {
     const DessertData = MenuData.filter(data => data.isActive && data.catagory === "dessert");
     const SpecialtyData = MenuData.filter(data => data.isActive && data.catagory === "specialty");
 
-    // Use Effect and Function for card shake
-    useEffect(() => {
-        let scrollTimeout;
-        const handleScroll = () => {
-          if (window.scrollY > 40) {
-            setIsShaking(true);
-    
-            // Reset timeout every time scrolling occurs
-            clearTimeout(scrollTimeout);
-    
-            // Remove the shake class after 0.5s of no scrolling
-            scrollTimeout = setTimeout(() => {
-              setIsShaking(false);
-            }, 500);
-          }
-        };
-    
-        // Add scroll event listener
-        window.addEventListener("scroll", handleScroll);
-    
-        // Clean up event listener on component unmount
-        return () => {
-          window.removeEventListener("scroll", handleScroll);
-          clearTimeout(scrollTimeout);
-        };
-      }, []);
+    // Call Hook to force page to top when component mounts
+    useScrollToTop();
 
-    useEffect(() => {
-        window.scrollTo(0,0)
-    },[])
 
     return (
         <main>
             <div className="menu">
+                {/* Online Order Button Triggers Modal For Down Service */}
                 <Button to= { "#" } text={ "Order Online" } handleOpenModal={ handleOpenModal } />
-
                 {/* Appetizer Menu MAPPING */}
                 <h1>Appetizers</h1>
                 <div className="menu_card_container">
@@ -75,7 +54,6 @@ const MenuPage = ({ handleOpenModal }) => {
                         )
                     })}
                 </div>
-
                 {/* Main Course MAPPING */}
                 <h1>Main Course</h1>
                 <h5>
@@ -101,7 +79,6 @@ const MenuPage = ({ handleOpenModal }) => {
                         )
                     })}
                 </div>
-
                 {/* Kids Menu MAPPING */}
                 <h1>Kids Menu</h1>
                 <div className="menu_card_container">
@@ -119,7 +96,6 @@ const MenuPage = ({ handleOpenModal }) => {
                         )
                     })}
                 </div>
-
                 {/* Dessert Menu MAPPING */}
                 <h1>Dessert</h1>
                 <div className="menu_card_container">
@@ -136,26 +112,29 @@ const MenuPage = ({ handleOpenModal }) => {
                         )
                     })}
                 </div>
-
                 {/* Drinks Menu MAPPING */}
                 <div className="menu_drinks">
                     <h1>Drinks</h1>
                     <h3>
                         COKE PRODUCTS
+                        {/* Break Occurs and Circle is removed on smaller screens */}
                         <br className="menu_break"/>
                         <FaCircle className="drinks_break"/>
                         SWEET TEA
+                        {/* Break Occurs and Circle is removed on smaller screens */}
                         <br className="menu_break"/>
                         <FaCircle className="drinks_break"/>
                         SPARKLING WATER
                     </h3>
                     <h3>
                         COFFEE
-                        <FaCircle className="drinks_break"/>
+                        {/* Break Occurs and Circle is removed on smaller screens */}
                         <br className="menu_break"/>
+                        <FaCircle className="drinks_break"/>
                         REDBULL
-                        <FaCircle className="drinks_break"/>
+                        {/* Break Occurs and Circle is removed on smaller screens */}
                         <br className="menu_break"/>
+                        <FaCircle className="drinks_break"/>
                         MONSTER
                     </h3>
                 </div>
@@ -177,11 +156,7 @@ const MenuPage = ({ handleOpenModal }) => {
                         )
                     })}
                 </div>
-
-
-
-
-
+                {/* Online Order Button Triggers Modal For Down Service */}
                 <Button to= { "#" } text={ "Order Online" } handleOpenModal={handleOpenModal} />
             </div>
         </main>
