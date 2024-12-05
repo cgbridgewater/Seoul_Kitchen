@@ -650,8 +650,8 @@ nav ul a:hover:before, nav ul a:hover:after {
   min-width:220px;
   height:60px;
   position:relative;
-  background-color: var(--blue);
   text-transform:uppercase;
+  background-color: var(--blue);
   color: var(--main_bg);
   font-weight:900;
   letter-spacing:1px;
@@ -671,7 +671,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   top:-5px;
   left:-200px;
   transform:rotate(45deg);
-  transition:all .2s ease-in-out;  
+  transition:all .2s ease-in-out;
   z-index:1;
 }
 

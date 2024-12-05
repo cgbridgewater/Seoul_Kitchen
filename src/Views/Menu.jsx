@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 // Subcomponent Imports
 import MenuCard from "../Components/MenuCard";
 import Button from "../Components/Button";
@@ -31,7 +29,6 @@ const MenuPage = ({ handleOpenModal }) => {
 
     // Call Hook to force page to top when component mounts
     useScrollToTop();
-
 
     return (
         <main>

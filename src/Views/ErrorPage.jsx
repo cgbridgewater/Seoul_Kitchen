@@ -1,6 +1,5 @@
 // Import React Magic
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 
 // Import Subcomponents
 import Button from "../Components/Button";
