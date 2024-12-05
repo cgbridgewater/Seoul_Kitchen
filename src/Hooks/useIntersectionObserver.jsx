@@ -1,3 +1,4 @@
+// Import React Magic
 import { useEffect } from "react";
 
 const useIntersectionObserver = (elements, options) => {
@@ -16,7 +17,7 @@ const useIntersectionObserver = (elements, options) => {
                 // This keeps it on the screen; removing this will cause it to fade out when not in view
                 if (entry.isIntersecting) observer.unobserve(entry.target);
             });
-        }, options); // Pass in the options for the observer
+        }, options); 
 
         // Observe each element provided in the elements array
         elements.forEach(element => {
@@ -29,8 +30,8 @@ const useIntersectionObserver = (elements, options) => {
                 observer.unobserve(element);
             });
         };
-    }, [elements, options]); // Dependency array to re-run effect if elements or options change
+        // Dependency array to re-run effect if elements or options change
+    }, [elements, options]);
 };
 
 export default useIntersectionObserver;
-
