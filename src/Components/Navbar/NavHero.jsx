@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import SK_LOGO from "../../assets/Images/SK_Logo_No_BG_White.png"
+import SK_LOGO from "../../assets/Images/SoulFoodLogoWhite.png"
 import NavLink from "./NavLink"
 
 const NavHero = () => {
@@ -108,7 +108,7 @@ const NavHero = () => {
                             {/* <li><NavLink href={"/"} text={ "Home "} /></li> */}
                             <li><NavLink href={"/location"} text={ "Hours And Location"} /></li>
                             <li><NavLink href={"/menu"} text={ "View Menu"} /></li>
-                            <li><NavLink href={"#disabled"} text={ "Order Online"} /></li>
+                            <li><NavLink href={"#coming-soon"} text={ "Order Online"} /></li>
                         </ul>
                     </nav>
                     {/* END Nav Links */}
