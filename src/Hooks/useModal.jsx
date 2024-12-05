@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const useModal = () => {
-
     // State for Modal
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -22,6 +21,20 @@ const useModal = () => {
     const handleCloseModal = () => {
         setIsModalOpen(false);
     };
+
+    // useEffect to handle the body scroll
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+
+        // Clean up the effect on component unmount
+        return () => {
+            document.body.classList.remove('no-scroll');
+        };
+    }, [isModalOpen]);
 
     return {
         isModalOpen,
