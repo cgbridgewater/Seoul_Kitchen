@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Button from "../Components/Button";
 
 // Import Images
-import Bibim_Bap from "../assets/Images/Bibim_Bap.jpg"
+import Bibim_Bap from "../assets/Images/SeoulFoodAboutUsFood.jpg"
 
 // Import Custom Hooks
 import useScrollToTop from "../Hooks/useScrollToTop";
@@ -37,6 +37,7 @@ const AboutUs = () => {
 
     return (
         <main>
+            <br />
             <div className="wrapper">
                 <div className="split_box">
                     {/* Left Box With Text and Button */}

@@ -955,26 +955,26 @@ nav ul a:hover:before, nav ul a:hover:after {
 
 /* images and times for slide show */
 .slideshow li:nth-child(1) span { 
-  background-image: url("./assets/Images/Dakkalbi.png"); 
+  background-image: url("./assets/Images/Slide1.jpg"); 
 }
 .slideshow li:nth-child(2) span { 
-  background-image: url("./assets/Images/Strawb_Croffle.jpeg");
+  background-image: url("./assets/Images/Slide2.jpg");
   animation-delay: 3s; 
 }
 .slideshow li:nth-child(3) span { 
-  background-image: url("./assets/Images/Galbi2.png");
+  background-image: url("./assets/Images/Slide3.jpg");
   animation-delay: 6s; 
 }
 .slideshow li:nth-child(4) span { 
-  background-image: url("./assets/Images/Oreo_Croffle.jpeg");   
+  background-image: url("./assets/Images/Slide4.jpg");
   animation-delay: 9s; 
 }
 .slideshow li:nth-child(5) span { 
-  background-image: url("./assets/Images/Kimbap.jpg");
+  background-image: url("./assets/Images/Slide5.jpg");
   animation-delay: 12s; 
 }
 .slideshow li:nth-child(6) span { 
-  background-image: url("./assets/Images/Bibim_Bap.jpg");
+  background-image: url("./assets/Images/Slide6.jpg");
   animation-delay: 15s; 
 }
 
@@ -1493,7 +1493,14 @@ nav ul a:hover:before, nav ul a:hover:after {
   overflow-x: hidden;
   overflow-y: auto;
 
+  img {
+    height: 100px;
+    width: 100px;
+    margin: 12px auto;
+  }
+
   p {
+    font-size: 1.125rem;
     margin: 8px;
     font-family: 'Source Sans Pro', sans-serif;
   }

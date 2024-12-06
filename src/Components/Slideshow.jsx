@@ -15,7 +15,7 @@ const Slideshow = () => {
 
   return (
     <>
-      {/* SlideShow Images */}
+      {/* SlideShow Images -- Images are in CSS as Backgrounds */}
       <ul className="slideshow">
         <li><span></span></li>
         <li><span></span></li>

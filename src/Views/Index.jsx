@@ -6,8 +6,8 @@ import Button from "../Components/Button";
 import Slideshow from "../Components/Slideshow";
 
 // Import Images
-import RamSet from "../assets/Images/Ram_Set.jpg";
-import Tofu from "../assets/Images/Tofu.jpg";
+import IndexImage1 from "../assets/Images/Index1.jpg";
+import IndexImage2 from "../assets/Images/Index2.jpg";
 
 // Import Custom Hooks
 import useScrollToTop from "../Hooks/useScrollToTop";
@@ -80,7 +80,7 @@ const Index = ({ handleOpenModal }) => {
                         className="split_box_img hidden right"
                         ref={el => (splitImgRefs.current[1] = el)}
                     >
-                        <img src={Tofu} alt="Galbi Plate" />
+                        <img src={IndexImage2} alt="Galbi Plate" />
                     </div>
                 </div>
                 {/* Split box for Order Online */}
@@ -89,7 +89,7 @@ const Index = ({ handleOpenModal }) => {
                         className="split_box_img hidden left"
                         ref={el => (splitImgRefs.current[2] = el)}
                     >
-                        <img src={RamSet} alt="Galbi Plate" />
+                        <img src={IndexImage1} alt="Galbi Plate" />
                     </div>
                     <div
                         className="split_box_text hidden right"
