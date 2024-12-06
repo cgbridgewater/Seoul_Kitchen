@@ -1,3 +1,6 @@
+// Import Images
+import SFLogo from "../../assets/Images/SoulFoodLogoWhite.png"
+
 const ComingSoon = ({ handleCloseModal, handleOverlayClick, isModalOpen }) => {
 
     return (
@@ -6,7 +9,8 @@ const ComingSoon = ({ handleCloseModal, handleOverlayClick, isModalOpen }) => {
                 isModalOpen ? (
                     <div className="modal_overlay" onClick={handleOverlayClick}>
                         <div className="coming_soon">
-                            <h3>Online Ordering Temporarily Unavailable</h3>
+                            <img src={SFLogo} alt="Seoul Food Logo" />
+                            <h4>Online Ordering Temporarily Unavailable</h4>
                             <p>
                                 We apologize for the inconvenience, but our online ordering system is currently down for maintenance. Our team is working diligently to restore this feature as quickly as possible.
                             </p>
