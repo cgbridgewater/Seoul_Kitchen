@@ -1,7 +1,7 @@
 import { BiSolidDrink } from "react-icons/bi";
 import { GiBowlOfRice, GiChiliPepper } from "react-icons/gi";
 import { LuVegan } from "react-icons/lu";
-import { SiCaffeine } from "react-icons/si";
+import { SiRedbull } from "react-icons/si";
 
 const MenuCard = ({ isShaking, image, title, desc, hasRice, isSpicy, isVeg, isAlcohal, hasCaffeine }) => {
 
@@ -15,7 +15,7 @@ const MenuCard = ({ isShaking, image, title, desc, hasRice, isSpicy, isVeg, isAl
                     { isSpicy ? <GiChiliPepper/> : null }
                     { isVeg ? <LuVegan/> : null }
                     { isAlcohal ? <BiSolidDrink /> : null }
-                    { hasCaffeine ? <SiCaffeine /> : null }
+                    { hasCaffeine ? <SiRedbull /> : null }
                 </h5>
                 <p>{ desc }</p>
             </div>
