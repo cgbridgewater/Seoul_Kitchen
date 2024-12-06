@@ -1,3 +1,4 @@
+// Import React Magic
 import { Link } from "react-router-dom"
 
 const FooterLink = ({ href, text, handleOpenModal}) => {

@@ -1,7 +1,3 @@
-// Custom Hook Imports
-import useShake from "../Hooks/useShake";
-import useScrollToTop from "../Hooks/useScrollToTop";
-
 // Import Subcomponents
 import MenuApps from "../Components/Menu/MenuApps";
 import MenuMain from "../Components/Menu/MenuMain";
@@ -11,10 +7,14 @@ import MenuSpecialty from "../Components/Menu/MenuSpecialty";
 import MenuDrinks from "../Components/Menu/MenuDrinks";
 import Button from "../Components/Button";
 
+// Custom Hook Imports
+import useShake from "../Hooks/useShake";
+import useScrollToTop from "../Hooks/useScrollToTop";
+
 const MenuPage = ({ handleOpenModal }) => {
     
-        // Call Hook to force page to top when component mounts
-        useScrollToTop();
+    // Call Hook to force page to top when component mounts
+    useScrollToTop();
 
     // Deconstruct custom hook for card shake
     const { isShaking } = useShake();

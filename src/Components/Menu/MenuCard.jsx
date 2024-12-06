@@ -1,3 +1,4 @@
+// Imports
 import { BiSolidDrink } from "react-icons/bi";
 import { GiBowlOfRice, GiChiliPepper } from "react-icons/gi";
 import { LuVegan } from "react-icons/lu";

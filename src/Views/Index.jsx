@@ -1,3 +1,4 @@
+// Import React Magic
 import { useEffect, useRef, useState } from "react";
 
 // Import Sub Components

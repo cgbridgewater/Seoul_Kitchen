@@ -2,6 +2,7 @@
 import useScrollToTop from "../Hooks/useScrollToTop";
 
 const Location = () => {
+
     // get Google API key
     const Google_API = import.meta.env.VITE_MB_GOOGLE_API;
 
