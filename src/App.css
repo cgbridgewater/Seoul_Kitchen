@@ -1227,7 +1227,7 @@ nav ul a:hover:before, nav ul a:hover:after {
       font-weight: 900;
       padding-bottom: 3px;
       text-align: center;
-      border-bottom: thin solid var(--blue);
+      border-bottom: thin solid var(--red);
     }
     p{
       margin: 8px auto;
