@@ -2,8 +2,8 @@
     {
         "id": 1,
         "catagory": "app",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
-        "title": "GonManDu",
+        "image": "https://live.staticflickr.com/65535/54188013520_e106bdcb65.jpg",
+        "title": "Gonmandu",
         "desc": "6 Korean dumplings filled with a mix of mean and vegetables, served with a dipping sauce.",
         "hasRice": false,
         "isSpicy": false,
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "catagory": "app",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54186687547_44e8141610_n.jpg",
         "title": "Samgyeopsal Kimbap",
         "desc": "Savory pork belly, lettuce, vegetables, ssamjang (Korean Bean Paste) & seasoned rice wrapped in seaweed.",
         "hasRice": false,
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "catagory": "app",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54187836843_d14afba52d.jpg",
         "title": "Yangnyeom Chicken",
         "desc": "6 Fried chicken pieces coated in a sweet & spicy sauce made from a blend of gochujang (Korean chili paste) & honey.",
         "hasRice": false,
@@ -38,7 +38,7 @@
     {
         "id": 4,
         "catagory": "app",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54187836843_d14afba52d.jpg",
         "title": "Chamchi Kimbap",
         "desc": "Tuna salad, lettuce, vegetables & seasoned rice wrapped in seaweed.",
         "hasRice": false,
@@ -50,7 +50,7 @@
     {
         "id": 5,
         "catagory": "app",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54186687542_1ba430d197.jpg",
         "title": "Dakgangjeong",
         "desc": "6 Fried chicken pieces coated in a sweet and tangy sauce made from a blend of soy sauce & garlic.",
         "hasRice": false,
@@ -62,7 +62,7 @@
     {
         "id": 6,
         "catagory": "app",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54187570676_bf3e9ba9d5.jpg",
         "title": "Yachae Kimbap",
         "desc": "Seasoned vegetables & rice wrapped in seaweed.",
         "hasRice": false,
@@ -74,7 +74,7 @@
     {
         "id": 7,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "DolSot Yachae Bibimbap",
         "desc": "Spinach, carrots, bean sprouts, shiitake mushrooms, zucchini & radish, each individually marinated. Served in a hot stone pot and topped with a fried egg. Comes with a side of gochujang sauce.",
         "hasRice": false,
@@ -86,7 +86,7 @@
     {
         "id": 8,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Dubu Bokkeum",
         "desc": "Cubs of tofu sauteed with carrots, onions, mushrooms & bell peppers, served in our speacial seasoned soy sauce",
         "hasRice": false,
@@ -98,7 +98,7 @@
     {
         "id": 9,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Dolsot Bibimbap",
         "desc": "Beef, spinach, carrots, bean sprouts, shiitake mushrooms, zucchini & radish, each individually marinated. Served in a hot stone pot and topped with a fried egg. Comes with a side of gochujang sauce.",
         "hasRice": false,
@@ -110,7 +110,7 @@
     {
         "id": 10,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Ramen and Kimbap Set",
         "desc": "Choose between spicy OR mild ramen. Served with Yachae Kimbap & kimchi. Substitute for Chamchi Kimbap +$1.00.",
         "hasRice": false,
@@ -122,7 +122,7 @@
     {
         "id": 11,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Dakgalbi",
         "desc": "Chicken marinated in a gochujang sauce & cooked with cabbage, carrots, hot pepper & green onions. Served in a sizzling pan.",
         "hasRice": true,
@@ -134,7 +134,7 @@
     {
         "id": 12,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Dwaeji Bulgogi",
         "desc": "Thinly sliced marinated pork cooked with onions & green onions. Served in a sizzling pan",
         "hasRice": true,
@@ -146,7 +146,7 @@
     {
         "id": 13,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Bulgogi",
         "desc": "Thinly sliced beef cooked with onions, carrots, green onions & mushrooms. Served in a sizzling pan.",
         "hasRice": true,
@@ -158,7 +158,7 @@
     {
         "id": 14,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Tonkatsu",
         "desc": "Breaded deep-fried pork cutlet. Served with rice & choice of shredded lettuce with dressing OR macaroni salad & soup.",
         "hasRice": true,
@@ -170,7 +170,7 @@
     {
         "id": 15,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "",
         "desc": "",
         "hasRice": false,
@@ -182,7 +182,7 @@
     {
         "id": 16,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "",
         "desc": "",
         "hasRice": false,
@@ -194,9 +194,9 @@
     {
         "id": 17,
         "catagory": "kids",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
-        "title": "Chicken Nuggets & Fries",
-        "desc": "Served with fresh fruit and regular drink of choice.",
+        "image": "https://live.staticflickr.com/65535/54189632318_5628aac79f.jpg",
+        "title": "Chicken Nuggets",
+        "desc": "Served with fresh fruit OR fries and regular drink of choice.",
         "hasRice": false,
         "isSpicy": false,
         "isVeg": false,
@@ -206,9 +206,9 @@
     {
         "id": 18,
         "catagory": "kids",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
-        "title": "Mini Corn Dogs & Fries",
-        "desc": "Served with fresh fruit & drink of choice.",
+        "image": "https://live.staticflickr.com/65535/54188481842_39ab4dcd25_z.jpg",
+        "title": "Mini Corn Dogs",
+        "desc": "Served with fresh fruit OR fries and regular drink of choice.",
         "hasRice": false,
         "isSpicy": false,
         "isVeg": false,
@@ -218,9 +218,9 @@
     {
         "id": 19,
         "catagory": "kids",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54189653439_7e2e346589.jpg",
         "title": "Grill Cheese Sandwich & Fries",
-        "desc": "Served with fresh fruit & drink of choice.",
+        "desc": "Served with fresh fruit OR fries and regular drink of choice.",
         "hasRice": false,
         "isSpicy": false,
         "isVeg": false,
@@ -230,7 +230,7 @@
     {
         "id": 20,
         "catagory": "kids",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54188451737_d40904fd1b_z.jpg",
         "title": "Dakgangjeong",
         "desc": "A crispy fried chicken dish that is coated in a sweet, sticky sauce, made with soy sauce, honey, garlic, and sesame oil, for a savory and slightly sweet flavor.",
         "hasRice": true,
@@ -242,8 +242,8 @@
     {
         "id": 21,
         "catagory": "dessert",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
-        "title": "Oreo & Whipped Cream Croffle",
+        "image": "https://live.staticflickr.com/65535/54188495982_20c905e342.jpg",
+        "title": "Oreo and Whipped Cream Croffle",
         "desc": "A new Korean dessert that combines croissants and waffles, topped with Oreo and whipped cream.",
         "hasRice": false,
         "isSpicy": false,
@@ -254,8 +254,8 @@
     {
         "id": 22,
         "catagory": "dessert",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
-        "title": "Biscoff and Whipped Cream",
+        "image": "https://live.staticflickr.com/65535/54189385906_1f0e242ce6_w.jpg",
+        "title": "Biscoff + Strawberry & Whipped Cream Croffle",
         "desc": "A new Korean dessert that combines croissants and waffles, topped with Biscoff and whipped cream.",
         "hasRice": false,
         "isSpicy": false,
@@ -266,8 +266,8 @@
     {
         "id": 23,
         "catagory": "dessert",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
-        "title": "Strawberry and Whipped Cream",
+        "image": "https://live.staticflickr.com/65535/54189385941_bcd8e4a176_z.jpg",
+        "title": "Strawberry and Whipped Cream Croffle",
         "desc": "A new Korean dessert that combines croissants and waffles, topped with Strawberry and whipped cream.",
         "hasRice": false,
         "isSpicy": false,
@@ -278,8 +278,8 @@
     {
         "id": 24,
         "catagory": "dessert",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
-        "title": "Nuttella and Whipped Cream",
+        "image": "https://live.staticflickr.com/65535/54188496127_62d3538b78.jpg",
+        "title": "Nuttella and Whipped Cream Croffle",
         "desc": "A new Korean dessert that combines croissants and waffles, topped with Nuttella and whipped cream.",
         "hasRice": false,
         "isSpicy": false,
@@ -290,8 +290,8 @@
     {
         "id": 25,
         "catagory": "dessert",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
-        "title": "Bingsu",
+        "image": "https://live.staticflickr.com/65535/54189386016_b861d8e15c.jpg",
+        "title": "Bingsu With Fresh Fruit",
         "desc": "A refreshing treat made with finely shaved ice, topped with sweetened red beans, fresh fruit, condensed milk, and ice cream—perfect for cooling down after a spicy meal.",
         "hasRice": false,
         "isSpicy": false,
@@ -302,7 +302,7 @@
     {
         "id": 26,
         "catagory": "dessert",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54189666079_4201c56f5a_n.jpg",
         "title": "Melona Ice Cream",
         "desc": "A beloved Korean ice cream bark nown for its creamy texture and refreshing fruity taste. Hand made from melon-flavored cream encased in a thin colorful coating. Available in Melon, Strawberry and Mango",
         "hasRice": false,
@@ -314,7 +314,7 @@
     {
         "id": 27,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Ice Cream Soda",
         "desc": "A fun and fizzy beverage that’s a favorite among kids. It’s made by mixing lemon-lime soda with a scoop of ice cream, which creates a creamy and bubbly texture. Topped with a cherry and sprinkles for an extra treat.",
         "hasRice": false,
@@ -326,7 +326,7 @@
     {
         "id": 28,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Soji",
         "desc": "A traditional Korean distilled spirit, often compared to vodka but has a lower alcohol content and a smoother taste. Comes from rice, barley, sweet potatoes (distilled).",
         "hasRice": false,
@@ -338,7 +338,7 @@
     {
         "id": 29,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Makgeolli",
         "desc": "A traditional Korean rice wine made by fermenting rice, which results in a creamy and slightly sweet drink.",
         "hasRice": false,
@@ -350,7 +350,7 @@
     {
         "id": 30,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Binggrae Banana Milk",
         "desc": "A beloved Korean drink, This sweet and creamy banana-flavored milk is widely popular among children and adults alike.",
         "hasRice": false,
@@ -362,7 +362,7 @@
     {
         "id": 31,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Iced Omija Tea",
         "desc": "A traditional Korean herbal tea made from the five-flavor berry (Omija). The drink is known for its sweet, sour, salty, bitter, and pungent flavors all at once. Served cold",
         "hasRice": false,
@@ -374,7 +374,7 @@
     {
         "id": 32,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Sikhye",
         "desc": "A sweet Korean rice drink made from fermented malt barley and cooked rice. Often enjoyed as a dessert.",
         "hasRice": false,
@@ -386,7 +386,7 @@
     {
         "id": 33,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Baekseju",
         "desc": "A traditional Korean herbal wine known for its medicinal properties, made from a blend of rice, ginseng, and other natural ingredients. The drink has a sweet and earthy flavor and is often consumed for health benefits.",
         "hasRice": false,
@@ -398,7 +398,7 @@
     {
         "id": 34,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Dongdongju ",
         "desc": "This is a Korean unfiltered rice wine, similar to makgeolli but thicker and cloudier. It’s made by fermenting rice and barley. It has a slightly sweet and milky flavor.",
         "hasRice": false,
@@ -410,7 +410,7 @@
     {
         "id": 35,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Yogurt Soju",
         "desc": " Yogurt Soju is a sweet and smooth cocktail made by mixing soju with Yakult, a yogurt-based drink. It's very popular for those who prefer sweeter, milder cocktails.",
         "hasRice": false,
@@ -422,7 +422,7 @@
     {
         "id": 36,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Chamisul & Lemonade",
         "desc": "Chamisul is one of the most well-known soju brands in Korea. Mixed with lemonade for a refreshing, slightly tangy drink. This is a light and easy-to-drink cocktail",
         "hasRice": false,
@@ -434,7 +434,7 @@
     {
         "id": 37,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Soja Redbull",
         "desc": "This cocktail is a combination of Soju and Red Bull. This drink is served as a 'bomb' drink.The combination creates a sweet, energizing drink. *contains caffeine*",
         "hasRice": false,
@@ -447,7 +447,7 @@
     {
         "id": 38,
         "catagory": "kids",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54189622049_96e64b3013_n.jpg",
         "title": "Cheese Burger & Fries",
         "desc": "A tasty and kid-friendly burger made with a juicy beef patty, melted cheese, and a soft bun, served with a side of crispy fries. No spicy ingredients, just delicious and cheesy goodness! ",
         "hasRice": false,
@@ -459,7 +459,7 @@
     {
         "id": 39,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Fried Chicken Sliders",
         "desc": "Bite-sized crispy fried chicken coated in a sweet and spicy gochujang glaze, nestled in toasted slider buns with fresh pickles and a drizzle of our house creamy mayo. Paired with crispy fries.",
         "hasRice": false,
@@ -471,7 +471,7 @@
     {
         "id": 40,
         "catagory": "kids",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "https://live.staticflickr.com/65535/54189781700_b97cb4b88b.jpg",
         "title": "Kimchi Grilled Cheese",
         "desc": "A fun twist on a classic. Gooey melted cheese with a little bit of tangy kimchi, all tucked between two slices of buttery, crispy bread. It's a cheesy, delicious snack paired with fresh fruit and choice of drink.",
         "hasRice": false,
@@ -483,7 +483,7 @@
     {
         "id": 41,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Gochujang BBQ Ribs",
         "desc": "Tender, slow-cooked ribs glazed in a sweet and spicy gochujang BBQ sauce. The perfect balance of heat and sweetness, served with a side of pickled radish and kimchi for the ultimate Korean BBQ experience.",
         "hasRice": false,
@@ -495,7 +495,7 @@
     {
         "id": 42,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "",
         "desc": "",
         "hasRice": false,
@@ -507,7 +507,7 @@
     {
         "id": 43,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "",
         "desc": "",
         "hasRice": false,
@@ -519,7 +519,7 @@
     {
         "id": 44,
         "catagory": "specialty",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "Yuja Soju Sour",
         "desc": "Our twist on the classic whiskey sour, this cocktail blends the bright, citrusy flavor of yuja with smooth soju mixed with a dash of lemon juice, simple syrup, and egg white for a frothy finish.",
         "hasRice": false,
@@ -531,7 +531,7 @@
     {
         "id": 1,
         "catagory": "main",
-        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp.kindpng.com%2Fpicc%2Fs%2F79-798754_hoteles-y-centros-vacacionales-dish-placeholder-hd-png.png&f=1&nofb=1&ipt=d42af9fe421b17eda83bb9693b0c0173fd8e514483912e775d5760bea448a7c2&ipo=images",
+        "image": "",
         "title": "",
         "desc": "",
         "hasRice": false,
