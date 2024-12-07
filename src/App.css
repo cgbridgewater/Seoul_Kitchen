@@ -1214,7 +1214,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 
     img {
       height: 120px;
-      width: 120px;
+      aspect-ratio: 1/1;
       border: 3px solid var(--blue);
       border-radius: 50%;
       margin: 8px;
@@ -1222,6 +1222,7 @@ nav ul a:hover:before, nav ul a:hover:after {
     
     h5 {
       width: 98%;
+      height: 35px;
       margin: 0 auto;
       font-size: 0.85rem;
       font-weight: 900;
