@@ -342,88 +342,52 @@ a {
 /*                     */
 .nav_header {
   position: fixed;
-  max-height: 120px;
+  max-height: 110px;
   z-index: 999;
   width: 100%;
   padding-top: 16px;
   overflow: hidden;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  /* opacity: 0;
-  top: -100px; */
   padding-bottom: 6px;
   font-family: "Montserrat", sans-serif;
   box-shadow:  0px 8px 10px var(--navbar_shadow);
-
-    background: var(--main_bg) url("./assets/Images/Seoul_Tower_Panorama_Night.jpg") 50% 50% no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    opacity: 1;
-    top: 0px;
-    border-bottom: 2px solid var(--blue); 
-
-
+  background: var(--main_bg) url("./assets/Images/HeaderFull.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  opacity: 1;
+  top: 0px;
+  border-bottom: 2px solid var(--blue); 
+  
   .nav_row {
+    width: 100%;
+    margin: 0 auto;
     position: relative;
-    top: 20px;
+    top: 10px;
+    padding: 0 36px;
   }
-  .navigation a {
-    font-size: 1rem;
-    /* background-color: #83118956; */
-    background-color: #0b397a94;
-    /* padding: 1px 2px; */
-    border-radius: 5px;
-    letter-spacing: .15rem;
-    font-weight: bolder;
+  .navigation {
+    position: relative;
+    top: 12px;
+
+    a {
+      font-size: 1.1rem;
+      border-radius: 5px;
+      letter-spacing: .15rem;
+      font-weight: bolder;
+    }
   }
 }
 
-.hero_section {
-  position: sticky;
-	max-height: 110px;
-  z-index: 998;
-  width: 100%;
-	padding-top: 42px;
-	background: var(--main_bg) url("./assets/Images/Seoul_Tower_Panorama_Night.jpg") 50% 50% no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	text-align: center;
-  border-bottom: thin solid var(--blue);
-
-  img {
-    position: relative;
-    top: -12px;
-    float: left;
-    height: 100px;
-    width: 110px;
-    padding: 5px;
-    z-index: 2;
-    border-radius: 15px;
-  }
-  .navigation a {
-    font-size: 1rem;
-    /* background-color: #83118956; */
-    background-color: #0b397a94;
-    /* padding: 1px 2px; */
-    border-radius: 5px;
-    letter-spacing: .15rem;
-    font-weight: bolder;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .nav_header, .hero_section {
-      padding-top: 25px;
-
+@media only screen and (max-width: 950px) {
+  .nav_header {
+  
       .navigation {
         opacity: 0;
         pointer-events: none;
 
         a {
-          background-color: #0b397ab6;
-          /* background-color: #831189b7; */
           padding: 1px 2px;
         }
       }
@@ -431,39 +395,23 @@ a {
 }
 
 .open_nav {
-  max-height: 400px !important;
+  max-height: 285px !important;
   
   .navigation {
     opacity: 1;
+    top: -70px;
     pointer-events: all;
   }
 }
 
-.hero_section.open_nav {
-  position: sticky;
-  margin-bottom: -133px;
-}
-
-
-.open_nav .mobile_toggle, .open_nav .hero_mobile_toggle {
+.open_nav .mobile_toggle {
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -webkit-transform-origin: 70% 35%;
   transform-origin: 70% 39%;
 }
 
-.sticky {
-  /* background-color: var(--main_bg); */
-  background: var(--main_bg) url("./assets/Images/Seoul_Tower_Panorama_Night.jpg") 50% 50% no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-  opacity: 1;
-  top: 0px;
-  border-bottom: 2px solid var(--blue); 
-}
-
-.logo, .hero_logo {
+.logo {
   position: relative;
   top: -24px;
   width: 220px;
@@ -479,11 +427,14 @@ a {
       width: 110px;
       padding: 5px;
       border-radius: 50%;
+      background-color: #2B2D2F10;
+      backdrop-filter: blur(1px);
+      filter: drop-shadow( 0px 0px 3px black);
     }
 }
 
-@media only screen and (max-width: 800px) {
-  .logo, .hero_logo {
+@media only screen and (max-width: 950px) {
+  .logo {
       float: none;
   }
 }
@@ -493,7 +444,7 @@ nav {
   width: 60%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   nav {
       width: 100%;
   }
@@ -504,8 +455,8 @@ nav ul {
   overflow: hidden;
   text-align: right;
   float: right;
-  width: 650px;
-
+  width: 770px;
+  
   li {
       display: inline-block;
       margin-left: 24px;
@@ -513,21 +464,19 @@ nav ul {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  nav ul {
-      padding-top: 10px;
-      margin-bottom: 22px;
-      float: left;
-      text-align: end;
-      width: 100%;
+@media only screen and (max-width: 950px) {
+  .navigation {
+    padding-top: 10px;
+    left: 20px;
   }
-}
-
-@media only screen and (max-width: 800px) {
-  nav ul li {
+  nav ul {
+  width: 100%;
+  
+    li {
       width: 100%;
       padding: 7px 0;
       margin: 0;
+    }
   }
 }
 
@@ -536,9 +485,12 @@ nav ul a {
   position: relative;
   font-size: 0.95rem;
   color: var(--white);
-
+  filter: drop-shadow( 2px 2px 2px black);
+  padding-bottom: 2px;
+  border-bottom: transparent;
+  
   &:hover {
-      color: var(--alt_white);
+    color: #bdbdbd;
   }
   &::before {
       left: 0; 
@@ -550,7 +502,6 @@ nav ul a {
 
 nav ul a:before, nav ul a:after {
   content: '';
-  border-bottom: 1px solid var(--alt_white);
   position: absolute;
   bottom: 0;
   width: 0;
@@ -558,11 +509,19 @@ nav ul a:before, nav ul a:after {
   transition: all 0.2s ease;
 }
 
+nav ul a:after {
+  border-bottom: 3px solid var(--red);
+}
+
+nav ul a:before {
+  border-bottom: 3px solid var(--blue);
+}
+
 nav ul a:hover:before, nav ul a:hover:after {
   width: 50%;
 }
 
-.mobile_toggle, .hero_mobile_toggle {
+.mobile_toggle {
   display: none;
   cursor: pointer;
   font-size: 20px;
@@ -575,7 +534,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   transition: all 200ms ease-in;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   .mobile_toggle, .hero_mobile_toggle {
       display: block;
   }
@@ -589,12 +548,13 @@ nav ul a:hover:before, nav ul a:hover:after {
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  height:30px;
+  height: 35px;
   width: 35px;
   display: block;
   z-index: 99999;
   position: relative;
   left: 5px;
+  top: 5px;
   transition: all 200ms ease;
 }
 
@@ -604,8 +564,9 @@ nav ul a:hover:before, nav ul a:hover:after {
   height: 3.5px;
   width: 30px;
   border-radius: 10px;
-  background: var(--alt_white);
-  box-shadow: 0 10px 0 var(--alt_white), 0 20px 0 var(--alt_white);
+  background: var(--white);
+  box-shadow: 0 10px 0 var(--white), 0 20px 0 var(--white);
+  filter: drop-shadow(0 0 3px black);
 }
 
 .visually-hidden {
@@ -619,12 +580,6 @@ nav ul a:hover:before, nav ul a:hover:after {
   white-space: nowrap !important;
 }
 
-.nav_row {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 36px;
-}
 /*                     */
 /*  END NAVBAR STYLE   */
 /*                     */
@@ -756,8 +711,8 @@ nav ul a:hover:before, nav ul a:hover:after {
       color: var(--white);
   }
   svg:hover, i:hover {
-  fill: var(--alt_white);
-  color: var(--alt_white);
+  fill: #bdbdbd;
+  color: #bdbdbd;
   }
 }
 
@@ -845,7 +800,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   text-wrap: nowrap;
 
   &:hover {
-    color: var(--alt_white);
+    color: #bdbdbd;
   }
   &::before {
       left: 0; 
@@ -857,12 +812,19 @@ nav ul a:hover:before, nav ul a:hover:after {
 
 .footer_link:before, .footer_link:after {
   content: '';
-  border-bottom: 1px solid var(--alt_white);
   position: absolute;
   bottom: 0;
   width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.footer_link:after {
+  border-bottom: 2px solid var(--red);
+}
+
+.footer_link:before {
+  border-bottom: 2px solid var(--blue);
 }
 
 .footer_link:hover:before, .footer_link:hover:after {
@@ -1085,7 +1047,7 @@ nav ul a:hover:before, nav ul a:hover:after {
       width: 50%;
       max-width: 600px;
       min-width: 290px;
-      filter: drop-shadow(5px 5px 5px  var(--shadow)) brightness(var(--image_brightness));
+      filter: drop-shadow(5px 5px 5px  var(--shadow));
   }
 }
 

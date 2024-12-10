@@ -5,15 +5,9 @@ const useNavbar = () => {
     const navHeaderRef = useRef(null);
 
     useEffect(() => {
-        // section 1 - Add/Remove sticky class on scroll based actions position
+        // section 1 - Remove open_nav class on scroll
         const handleScroll = () => {
             const nav_header = document.querySelector('.nav_header');
-            // Add 'sticky' class if scrolled down more than 1 pixel
-            if (window.scrollY > 1) {
-                nav_header.classList.add('sticky');
-            } else {
-                nav_header.classList.remove('sticky');
-            }
             // If page is scrolled when nav is open, close the nav
             if (nav_header && window.scrollY > 5) {
                 nav_header.classList.remove('open_nav');
