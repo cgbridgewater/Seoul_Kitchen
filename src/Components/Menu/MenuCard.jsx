@@ -1,5 +1,5 @@
 // Import React Magic
-import { FaArrowTurnDown, FaRegCircleXmark } from "react-icons/fa6";
+import { FaArrowTurnDown } from "react-icons/fa6";
 import { GiBowlOfRice, GiChiliPepper } from "react-icons/gi";
 import { LuVegan } from "react-icons/lu";
 import { SlEnergy } from "react-icons/sl";
