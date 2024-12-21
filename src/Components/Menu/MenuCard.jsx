@@ -1,15 +1,15 @@
 // Import React Magic
-import { useState, useEffect, useRef } from "react";
-
-// Import Images
-import DefaultFood from "../../assets/Images/DefaultFood.png";
-
-// Import Icons
+import { FaArrowTurnDown, FaRegCircleXmark } from "react-icons/fa6";
 import { GiBowlOfRice, GiChiliPepper } from "react-icons/gi";
 import { LuVegan } from "react-icons/lu";
 import { SlEnergy } from "react-icons/sl";
-import { FaArrowTurnDown, FaRegCircleXmark } from "react-icons/fa6";
 import { FaCocktail } from "react-icons/fa";
+
+// Import Custom Hook
+import useMenuCard from "../../Hooks/useMenuCard";
+
+// Import Images
+import DefaultFood from "../../assets/Images/DefaultFood.png";
 
 const MenuCard = ({
   isShaking,
@@ -23,88 +23,66 @@ const MenuCard = ({
   hasCaffeine,
 }) => {
 
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [contentHeight, setContentHeight] = useState(35);
-  const cardRef = useRef(null);
-  const infoRef = useRef(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (cardRef.current && !cardRef.current.contains(event.target)) {
-        setIsExpanded(false);
-      }
-    };
-    document.addEventListener("click", handleClickOutside);
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (isExpanded) {
-      // Measure content height when expanding
-      setContentHeight(infoRef.current.scrollHeight + 8);
-    } else {
-      // Collapse back to 35px
-      setContentHeight(35);
-    }
-  }, [isExpanded]);
-
-  const handleClick = () => {
-    if (windowWidth < 1010) {
-      setIsExpanded((prev) => !prev);
-    }
-  };
+  // Use the custom hook
+  const {
+    isExpanded,
+    windowWidth,
+    contentHeight,
+    cardRef,
+    infoRef,
+    handleClick,
+  } = useMenuCard();
 
   return (
     <div className={`menu_card ${isShaking ? "shake" : ""}`} ref={cardRef}>
+      {/* use image if provided, if empty use default image */}
       <img
         src={image !== "" ? image : DefaultFood}
         alt={image !== "" ? title : "No Image"}
       />
       <div>
+        {/* Card Title and icons */}
         <h5>
           {title}
           <span>
-            {hasRice ? <GiBowlOfRice className="ricebowl" /> : null}
-            {isSpicy ? <GiChiliPepper className="pepper" /> : null}
-            {isVeg ? <LuVegan className="vegan" /> : null}
-            {isAlcohal ? <FaCocktail className="alcohal" /> : null}
-            {hasCaffeine ? <SlEnergy className="caffeine" /> : null}
+            {hasRice && <GiBowlOfRice className="ricebowl" />}
+            {isSpicy && <GiChiliPepper className="pepper" />}
+            {isVeg && <LuVegan className="vegan" />}
+            {isAlcohal && <FaCocktail className="alcohal" />}
+            {hasCaffeine && <SlEnergy className="caffeine" />}
           </span>
         </h5>
+        {/* size changing container based on info content */}
         <div
           ref={infoRef}
           className={`info ${isExpanded ? "expanded" : ""}`}
           style={{ height: isExpanded ? contentHeight : "35px" }}
         >
-            {windowWidth >= 1010 ? (
-              <p>{desc}</p>
-              
-            ) : isExpanded ? (
-              <p>
-                {desc}
-                <span>
-                  <FaRegCircleXmark  
-                    className="info_close"
-                    onClick={handleClick}
-                  />
-                </span>
-              </p>
-            ) : (
-              <p onClick={handleClick}>Click for info &nbsp; <FaArrowTurnDown /></p>
-            )}
+          {/* Check Window Width To Determine What to Render */}
+          {windowWidth >= 1010 ? (
+            <p>{desc}</p>
+          ) 
+            : 
+          // Check If isExpanded is true and render accordingly
+          isExpanded ? (
+            <p>
+              {desc}
+              {/* close button to close info panel */}
+              <span>
+                <FaRegCircleXmark
+                  className="info_close"
+                  onClick={handleClick}
+                />
+              </span>
+            </p>
+          ) 
+            : 
+          (
+            // onClick switches state of isExpanded to open the info panel
+            <p onClick={handleClick}>
+              Click for info &nbsp; <FaArrowTurnDown />
+            </p>
+          )}
         </div>
       </div>
     </div>
