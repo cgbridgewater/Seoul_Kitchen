@@ -17,10 +17,10 @@ const MenuMain = ({ isShaking }) => {
         <>
             <h1 id="main">Main Course</h1>
             <h5>
-                <GiBowlOfRice /> Served with rice and seasonal side dishes &nbsp;
+                <GiBowlOfRice className="ricebowl"/> Served with rice and seasonal side dishes &nbsp;
                 <br className="menu_break" />
-                <GiChiliPepper /> Spicy &nbsp;
-                <LuVegan /> Vegetarian &nbsp;
+                <GiChiliPepper className="pepper"/> Spicy &nbsp;
+                <LuVegan className="vegan"/> Vegetarian &nbsp;
             </h5>
             <div className="menu_card_container">
                 {/* Main Course MAPPING */}

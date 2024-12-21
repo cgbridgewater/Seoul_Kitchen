@@ -1,5 +1,6 @@
 // Icon Imports
 import { FaCircle } from "react-icons/fa";
+import { SlEnergy } from "react-icons/sl";
 
 const MenuDrinks = () => {
 
@@ -7,6 +8,8 @@ const MenuDrinks = () => {
         <>
             <div id="drinks" className="menu_drinks">
                 <h1>Drinks</h1>
+                <h5><SlEnergy className="caffeine"/> Contains Caffeine</h5>
+
                 <h3>
                     COKE PRODUCTS
                     {/* Break Occurs and Circle is removed on smaller screens */}
@@ -23,11 +26,11 @@ const MenuDrinks = () => {
                     {/* Break Occurs and Circle is removed on smaller screens */}
                     <br className="menu_break"/>
                     <FaCircle className="drinks_break"/>
-                    REDBULL
+                    REDBULL<SlEnergy className="caffeine" />
                     {/* Break Occurs and Circle is removed on smaller screens */}
                     <br className="menu_break"/>
                     <FaCircle className="drinks_break"/>
-                    MONSTER
+                    MONSTER<SlEnergy className="caffeine" />
                 </h3>
             </div>
         </>

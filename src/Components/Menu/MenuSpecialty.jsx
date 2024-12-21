@@ -8,15 +8,19 @@ const SpecialtyData = MenuData.filter(data => data.isActive && data.catagory ===
 import MenuCard from "./MenuCard";
 
 // Icon Imports
-import { BiSolidDrink } from "react-icons/bi";
-import { SiRedbull } from "react-icons/si";
+import { FaCocktail } from "react-icons/fa";
+import { SlEnergy } from "react-icons/sl";
 
 const MenuSpecialty = ({ isShaking }) => {
 
     return (
         <>
             <h1 id="specialty">Specialty Drinks</h1>
-            <h5><BiSolidDrink />Contains Alcohal <SiRedbull /> Contains Caffeine</h5>
+            <h5>
+                <FaCocktail className="alcohal" /> Contains Alcohal <span>(21+)</span>
+                &nbsp;
+                <SlEnergy className="caffeine" /> Contains Caffeine
+            </h5>
             <div className="menu_card_container">
                 {/* Cocktails Menu MAPPING */}
                 {SpecialtyData.map((Specialty) => {
