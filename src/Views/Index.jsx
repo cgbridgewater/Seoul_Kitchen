@@ -31,7 +31,7 @@ const Index = ({ handleOpenModal }) => {
     }, []);
 
     // Determine threshold based on window width
-    const threshold = window.innerWidth < 600 ? 0.1 : 0.25;
+    const threshold = window.innerWidth < 600 ? 0.05 : 0.25;
 
     // Call the custom hook for intersection observer
     useIntersectionObserver(elements, {
@@ -42,15 +42,15 @@ const Index = ({ handleOpenModal }) => {
         <main>
             <div className="wrapper">
                 {/* Split box for slideshow and about us */}
-                <div className="split_box flip">
+                <div className="split_box">
                     <div
-                        className="split_box_img hidden bottom"
+                        className={`split_box_img ${window.innerWidth > 1265 ? 'hidden bottom' : 'hidden bottom'}`}
                         ref={el => (splitImgRefs.current[0] = el)}
                     >
                         <Slideshow />
                     </div>
                     <div
-                        className="split_box_text hidden bottom"
+                        className={`split_box_text ${window.innerWidth > 1265 ? 'hidden bottom' : 'hidden right'}`}
                         ref={el => (splitTextRefs.current[0] = el)}
                     >
                         <div className="menu_link">
@@ -65,9 +65,9 @@ const Index = ({ handleOpenModal }) => {
                     </div>
                 </div>
                 {/* Split box for menu link */}
-                <div className="split_box ">
+                <div className="split_box flip">
                     <div
-                        className="split_box_text hidden left"
+                        className={`split_box_text ${window.innerWidth > 1265 ? 'hidden left' : 'hidden right'}`}
                         ref={el => (splitTextRefs.current[1] = el)}
                     >
                         <div className="menu_link">
@@ -77,14 +77,14 @@ const Index = ({ handleOpenModal }) => {
                         </div>
                     </div>
                     <div
-                        className="split_box_img hidden right"
+                        className={`split_box_img ${window.innerWidth > 1265 ? 'hidden right' : 'hidden left'}`}
                         ref={el => (splitImgRefs.current[1] = el)}
                     >
                         <img src={IndexImage2} alt="Galbi Plate" />
                     </div>
                 </div>
                 {/* Split box for Order Online */}
-                <div className="split_box flip">
+                <div className="split_box">
                     <div
                         className="split_box_img hidden left"
                         ref={el => (splitImgRefs.current[2] = el)}
