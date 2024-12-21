@@ -18,7 +18,7 @@
 :root {
   --font_size_default: 16px;
   --white: #F6F5EA;
-  --alt_white: #CBE5EC;
+  --white_hover: #bdbdbd;
   --red: #CD2D3B;
   --main_bg: #2B2D2F;
   --blue: #46548B;
@@ -319,11 +319,6 @@ a {
   width: 10px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--alt_white); 
-}
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--blue);
@@ -490,7 +485,7 @@ nav ul a {
   border-bottom: transparent;
   
   &:hover {
-    color: #bdbdbd;
+    color: var(--white_hover);
   }
   &::before {
       left: 0; 
@@ -711,8 +706,8 @@ nav ul a:hover:before, nav ul a:hover:after {
       color: var(--white);
   }
   svg:hover, i:hover {
-  fill: #bdbdbd;
-  color: #bdbdbd;
+  fill: var(--white_hover);
+  color: var(--white_hover);
   }
 }
 
@@ -800,7 +795,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   text-wrap: nowrap;
 
   &:hover {
-    color: #bdbdbd;
+    color: var(--white_hover);
   }
   &::before {
       left: 0; 
@@ -906,7 +901,7 @@ nav ul a:hover:before, nav ul a:hover:after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--alt_white);
+  background-color: var(--shadow);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1230,10 +1225,6 @@ nav ul a:hover:before, nav ul a:hover:after {
     .info.expanded  {
       height: auto;
       cursor: auto;
-
-      p {
-        margin-top: 28px;
-      }
     }
   }
 }
@@ -1281,9 +1272,6 @@ nav ul a:hover:before, nav ul a:hover:after {
 
     .menu_card {
       width: 200px;
-      .info.expanded p {
-          margin-top: 32px;
-      }
     }
   }
   .info_close {
@@ -1456,7 +1444,7 @@ nav ul a:hover:before, nav ul a:hover:after {
 
     
     &:hover {
-      color: var(--alt_white);
+      color: var(--white_hover);
       text-decoration: underline;
     }
   }
