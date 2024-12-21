@@ -67,13 +67,6 @@ const MenuCard = ({
           isExpanded ? (
             <p>
               {desc}
-              {/* close button to close info panel */}
-              <span>
-                <FaRegCircleXmark
-                  className="info_close"
-                  onClick={handleClick}
-                />
-              </span>
             </p>
           ) 
             : 
