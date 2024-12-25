@@ -15,7 +15,7 @@ const MenuSpecialty = ({ isShaking }) => {
 
     return (
         <>
-            <h1 id="specialty">Specialty Drinks</h1>
+            <h1 id="specialty_menu">Specialty Drinks</h1>
             <h5>
                 <FaCocktail className="alcohal" /> Contains Alcohal <span>(21+)</span>
                 &nbsp;

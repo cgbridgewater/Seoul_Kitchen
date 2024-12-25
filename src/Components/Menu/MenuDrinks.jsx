@@ -6,7 +6,7 @@ const MenuDrinks = () => {
 
     return (
         <>
-            <div id="drinks" className="menu_drinks">
+            <div id="drinks_menu" className="menu_drinks">
                 <h1>Drinks</h1>
                 <h5><SlEnergy className="caffeine"/> Contains Caffeine</h5>
 

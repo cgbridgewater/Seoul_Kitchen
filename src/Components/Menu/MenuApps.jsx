@@ -11,7 +11,7 @@ const MenuApps = ({ isShaking }) => {
 
     return (
         <>
-            <h1 id="appeitizers">Appetizers</h1>
+            <h1 id="apps_menu">Appetizers</h1>
             <div className="menu_card_container">
                 {/* Appetizer Menu MAPPING */}
                 {AppsData.map((Apps) => {

@@ -14,7 +14,7 @@ const MenuKids = ({ isShaking }) => {
 
     return (
         <>
-            <h1 id="kids">Kids Menu</h1>
+            <h1 id="kids_menu">Kids Menu</h1>
             <h5>
                 <GiBowlOfRice className="ricebowl"/> Served with rice and seasonal side dishes &nbsp;
             </h5>

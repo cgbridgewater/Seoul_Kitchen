@@ -15,7 +15,7 @@ const MenuMain = ({ isShaking }) => {
 
     return (
         <>
-            <h1 id="main">Main Course</h1>
+            <h1 id="main_menu">Main Course</h1>
             <h5>
                 <GiBowlOfRice className="ricebowl"/> Served with rice and seasonal side dishes &nbsp;
                 <br className="menu_break" />

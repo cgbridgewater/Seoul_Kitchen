@@ -11,7 +11,7 @@ const MenuDessert = ({ isShaking }) => {
 
     return (
         <>
-            <h1 id="dessert">Dessert</h1>
+            <h1 id="dessert_menu">Dessert</h1>
             <div className="menu_card_container">
                 {/* Dessert Menu MAPPING */}
                 {DessertData.map((Dessert) => {
