@@ -1251,6 +1251,14 @@ nav ul a:hover:before, nav ul a:hover:after {
   }
 }
 
+.menu_jump_link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 350px;
+  margin: 30px auto -8px;
+}
+
 @media screen and (min-width:500px) {
   .menu_card_container {
     padding: 0 24px;
