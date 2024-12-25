@@ -74,7 +74,7 @@
     {
         "id": 7,
         "catagory": "main",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54227095825_ebeabeec40_w.jpg",
         "title": "DolSot Yachae Bibimbap",
         "desc": "Spinach, carrots, bean sprouts, shiitake mushrooms, zucchini & radish, each individually marinated. Served in a hot stone pot and topped with a fried egg. Comes with a side of gochujang sauce.",
         "hasRice": false,
@@ -86,7 +86,7 @@
     {
         "id": 8,
         "catagory": "main",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226931718_24c85cd6b3.jpg",
         "title": "Dubu Bokkeum",
         "desc": "Cubs of tofu sauteed with carrots, onions, mushrooms & bell peppers, served in our speacial seasoned soy sauce",
         "hasRice": false,
@@ -98,7 +98,7 @@
     {
         "id": 9,
         "catagory": "main",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226931758_a7ea33b298.jpg",
         "title": "Dolsot Bibimbap",
         "desc": "Beef, spinach, carrots, bean sprouts, shiitake mushrooms, zucchini & radish, each individually marinated. Served in a hot stone pot and topped with a fried egg. Comes with a side of gochujang sauce.",
         "hasRice": false,
@@ -110,7 +110,7 @@
     {
         "id": 10,
         "catagory": "main",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226698811_a7a8a3a32f_z.jpg",
         "title": "Ramen and Kimbap Set",
         "desc": "Choose between spicy OR mild ramen. Served with Yachae Kimbap & kimchi. Substitute for Chamchi Kimbap +$1.00.",
         "hasRice": false,
@@ -122,7 +122,7 @@
     {
         "id": 11,
         "catagory": "main",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226931798_9d4bab22b8.jpg",
         "title": "Dakgalbi",
         "desc": "Chicken marinated in a gochujang sauce & cooked with cabbage, carrots, hot pepper & green onions. Served in a sizzling pan.",
         "hasRice": true,
@@ -134,7 +134,7 @@
     {
         "id": 12,
         "catagory": "main",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54227095755_db029118a3_c.jpg",
         "title": "Dwaeji Bulgogi",
         "desc": "Thinly sliced marinated pork cooked with onions & green onions. Served in a sizzling pan",
         "hasRice": true,
@@ -146,7 +146,7 @@
     {
         "id": 13,
         "catagory": "main",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226699081_439fdba79b_n.jpg",
         "title": "Bulgogi",
         "desc": "Thinly sliced beef cooked with onions, carrots, green onions & mushrooms. Served in a sizzling pan.",
         "hasRice": true,
@@ -158,7 +158,7 @@
     {
         "id": 14,
         "catagory": "main",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226931743_3b1771b5e0.jpg",
         "title": "Tonkatsu",
         "desc": "Breaded deep-fried pork cutlet. Served with rice & choice of shredded lettuce with dressing OR macaroni salad & soup.",
         "hasRice": true,
@@ -314,7 +314,7 @@
     {
         "id": 27,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54227135860_bd70b60a54_n.jpg",
         "title": "Ice Cream Soda",
         "desc": "A fun and fizzy beverage that’s a favorite among kids. It’s made by mixing lemon-lime soda with a scoop of ice cream, which creates a creamy and bubbly texture. Topped with a cherry and sprinkles for an extra treat.",
         "hasRice": false,
@@ -326,7 +326,7 @@
     {
         "id": 28,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226981384_98ea45bf68_n.jpg",
         "title": "Soji",
         "desc": "A traditional Korean distilled spirit, often compared to vodka but has a lower alcohol content and a smoother taste. Comes from rice, barley, sweet potatoes (distilled).",
         "hasRice": false,
@@ -338,7 +338,7 @@
     {
         "id": 29,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54225832607_576e0df2ef_n.jpg",
         "title": "Makgeolli",
         "desc": "A traditional Korean rice wine made by fermenting rice, which results in a creamy and slightly sweet drink.",
         "hasRice": false,
@@ -350,7 +350,7 @@
     {
         "id": 30,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226971608_d88a795da1_z.jpg",
         "title": "Binggrae Milk",
         "desc": "A beloved Korean drink, This sweet and creamy flavored milk is widely popular among children and adults alike. Flavors: Strawberry, Melon, Peach, Banana, Chocolate.",
         "hasRice": false,
@@ -362,7 +362,7 @@
     {
         "id": 31,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226738481_227695449c_z.jpg",
         "title": "Iced Omija Tea",
         "desc": "A traditional Korean herbal tea made from the five-flavor berry (Omija). The drink is known for its sweet, sour, salty, bitter, and pungent flavors all at once. Served cold",
         "hasRice": false,
@@ -374,7 +374,7 @@
     {
         "id": 32,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54225832627_be86b6bbe4_n.jpg",
         "title": "Sikhye",
         "desc": "A sweet Korean rice drink made from fermented malt barley and cooked rice. Often enjoyed as a dessert.",
         "hasRice": false,
@@ -386,7 +386,7 @@
     {
         "id": 33,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54227146090_c29e84eedb_w.jpg",
         "title": "Baekseju",
         "desc": "A traditional Korean herbal wine known for its medicinal properties, made from a blend of rice, ginseng, and other natural ingredients. The drink has a sweet and earthy flavor and is often consumed for health benefits.",
         "hasRice": false,
@@ -398,7 +398,7 @@
     {
         "id": 34,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54227135780_f5494e15f3_n.jpg",
         "title": "Dongdongju ",
         "desc": "This is a Korean unfiltered rice wine, similar to makgeolli but thicker and cloudier. It’s made by fermenting rice and barley. It has a slightly sweet and milky flavor.",
         "hasRice": false,
@@ -410,7 +410,7 @@
     {
         "id": 35,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226971558_c780be62f7.jpg",
         "title": "Yogurt Soju",
         "desc": " Yogurt Soju is a sweet and smooth cocktail made by mixing soju with Yakult, a yogurt-based drink. It's very popular for those who prefer sweeter, milder cocktails.",
         "hasRice": false,
@@ -422,7 +422,7 @@
     {
         "id": 36,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226981634_de8a1159c5_n.jpg",
         "title": "Chamisul & Lemonade",
         "desc": "Chamisul is one of the most well-known soju brands in Korea. Mixed with lemonade for a refreshing, slightly tangy drink. This is a light and easy-to-drink cocktail",
         "hasRice": false,
@@ -434,8 +434,8 @@
     {
         "id": 37,
         "catagory": "specialty",
-        "image": "",
-        "title": "Soja Redbull",
+        "image": "https://live.staticflickr.com/65535/54226971543_7334b483c2_n.jpg",
+        "title": "Soju Redbull",
         "desc": "This cocktail is a combination of Soju and Red Bull. This drink is served as a 'bomb' drink.The combination creates a sweet, energizing drink. *contains caffeine*",
         "hasRice": false,
         "isSpicy": false,
@@ -459,7 +459,7 @@
     {
         "id": 39,
         "catagory": "main",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226698786_a6f0fd6a08.jpg",
         "title": "Fried Chicken Sliders",
         "desc": "Bite-sized crispy fried chicken coated in a sweet and spicy gochujang glaze, nestled in toasted slider buns with fresh pickles and a drizzle of our house creamy mayo. Paired with crispy fries.",
         "hasRice": false,
@@ -519,7 +519,7 @@
     {
         "id": 44,
         "catagory": "specialty",
-        "image": "",
+        "image": "https://live.staticflickr.com/65535/54226738396_a30826398d_n.jpg",
         "title": "Yuzu Soju Sour",
         "desc": "Our twist on the classic whiskey sour, this cocktail blends the bright, citrusy flavor of yuzu with smooth soju mixed with a dash of lemon juice, simple syrup, and egg white for a frothy finish.",
         "hasRice": false,
